@@ -1,5 +1,4 @@
 // api/extract.js
-import fetch from 'node-fetch';
 
 let issueDefinitions = null;
 const ISSUE_DEFS_URL = process.env.ISSUE_DEFS_URL 
