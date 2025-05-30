@@ -1,0 +1,7 @@
+{
+  "name": "entity-extraction-api",
+  "version": "1.0.0",
+  "main": "api/extract.js",
+  "type": "module",
+  "dependencies": {}
+}

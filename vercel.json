@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/extract", "dest": "/api/extract.js" }
+  ]
+}
