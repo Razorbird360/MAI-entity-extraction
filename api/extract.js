@@ -1,108 +1,168 @@
 // api/extract.js
 
-let issueDefinitions = null;
-const ISSUE_DEFS_URL = process.env.ISSUE_DEFS_URL 
-  || 'https://6835e768cd78db2058c39c38.mockapi.io/api/issueDefinitions';
+import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// Load and cache the issue definitions once per cold start
-async function loadIssueDefinitions() {
-  if (issueDefinitions) return issueDefinitions;
-  const res = await fetch(ISSUE_DEFS_URL);
-  if (!res.ok) throw new Error(`Failed to fetch issue definitions: ${res.status}`);
-  const data = await res.json();
-  // Expect data like:
-  // [
-  //   { componentType: "display", issues: [
-  //       { issueType: "screen goes black", keywords: ["black", "no display", "blank screen"] },
-  //       { issueType: "dim screen", keywords: ["dim", "low brightness"] },
-  //       ... 
-  //     ]
-  //   },
-  //   { componentType: "battery", issues: [
-  //       { issueType: "not charging", keywords: ["not charging","won't charge"] },
-  //       ...
-  //     ]
-  //   },
-  //   ...
-  // ]
-  issueDefinitions = data;
-  return data;
+const fileName = fileURLToPath(import.meta.url);
+const dirName  = path.dirname(fileName);
+
+const app = express();
+app.use(express.json());
+
+const definitionsPath = path.join(dirName, '../issueDefinitions.json');
+let definitions = [];
+
+try {
+  const raw = fs.readFileSync(definitionsPath, 'utf-8');
+  definitions = JSON.parse(raw);
+} catch (err) {
+  console.error('Error reading or parsing issueDefinitions.json:', err);
+  //exit so server does not start with invalid data
+  process.exit(1);
 }
 
-export default async function handler(req, res) {
-  if (req.method === 'GET') {
-    return res.status(200).json({ status: 'healthy', timestamp: new Date().toISOString() });
+//escaoe regex special characters in a string
+const escapeRegex = (str) =>
+  str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Precompute every “pattern” (device, component, issue, description, solution, regex)
+const patterns = [];
+const componentsByDevice = {};  
+
+definitions.forEach((deviceDef) => {
+  const dev = deviceDef.device.trim().toLowerCase();
+  componentsByDevice[dev] = [];
+
+  //wifi and bluetooth devices
+  if (deviceDef.issues) {
+    for (const [issueKey, { description, solution }] of Object.entries(deviceDef.issues)) {
+      const keyword = issueKey.trim().toLowerCase();
+      const regex   = new RegExp(`\\b${escapeRegex(keyword)}\\b`, 'i');
+
+      patterns.push({
+        device: dev,
+        component: null, // top‐level (no sub‐component)
+        issue: keyword,
+        description,
+        solution,
+        regex,
+      });
+    }
   }
 
-  if (req.method !== 'POST') {
-    res.setHeader('Allow', ['POST','GET']);
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (deviceDef.components) {
+    for (const [componentKey, componentObj] of Object.entries(deviceDef.components)) {
+      const comp = componentKey.trim().toLowerCase();
+      componentsByDevice[dev].push(comp); // record that "comp" belongs to this device
+
+      // each componentObj itself is a map from issueKey → { description, solution}
+      for (const [issueKey, issueDetail] of Object.entries(componentObj)) {
+        if (
+          typeof issueDetail !== 'object' ||
+          issueDetail === null ||
+          !('description' in issueDetail) ||
+          !('solution' in issueDetail)
+        ) {
+          continue;
+        }
+
+        const keyword = issueKey.trim().toLowerCase();
+        const regex   = new RegExp(`\\b${escapeRegex(keyword)}\\b`, 'i');
+
+        patterns.push({
+          device: dev,
+          component: comp,
+          issue: keyword,
+          description: issueDetail.description,
+          solution: issueDetail.solution,
+          regex,
+        });
+      }
+    }
+  }
+});
+
+app.get('/health', (_req, res) => {
+  return res.json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+  });
+});
+
+
+app.post('/extract', (req, res) => {
+  const rawText = (req.body.text || '').trim();
+  const text    = rawText.toLowerCase();
+
+  if (!text) {
+    return res.status(400).json({ error: 'Missing "text" in request body' });
   }
 
-  const { text } = req.body;
-  if (typeof text !== 'string' || !text.trim()) {
-    return res.status(400).json({ error: 'Missing or empty text field' });
-  }
-
-  const lower = text.toLowerCase();
-  const result = {
-    deviceType: null,
-    componentType: null,
-    issueTypes: [],
-    connectionType: null,
-    timestamp: new Date().toISOString()
-  };
-
-  // 1) deviceType
-  if (/\blaptop\b/.test(lower)) result.deviceType = 'laptop';
-  else if (/\bdesktop\b|\bpc\b/.test(lower)) result.deviceType = 'desktop';
-  else if (/\bserver\b/.test(lower)) result.deviceType = 'server';
-
-  // 2) componentType
-  const compMap = {
-    display: /\bscreen\b|\bdisplay\b/,
-    gpu: /\bgpu\b|\bgraphics card\b|\bnvidia\b|\bamd\b/,
-    cpu: /\bcpu\b|\bprocessor\b/,
-    ram: /\bram\b|\bmemory\b/,
-    storage: /\bssd\b|\bhdd\b|\bhard drive\b/,
-    keyboard: /\bkeyboard\b/,
-    touchpad: /\btouchpad\b/,
-    speakers: /\bspeaker\b|\baudio\b|no sound\b/,
-    fans: /\bfan\b|\boverheat\b|\bhot\b/,
-    network: /\bwifi\b|\bbluetooth\b|\bethernet\b|\bnetwork\b/
-  };
-  for (const [comp, regex] of Object.entries(compMap)) {
-    if (regex.test(lower)) {
-      result.componentType = comp;
+  //check for device mentions in the text
+  let detectedDevice = null;
+  for (const deviceDef of definitions) {
+    const devName = deviceDef.device.trim().toLowerCase();
+    // check word boundary so that "phone" does not match "smartphone" accidentally
+    const deviceRegex = new RegExp(`\\b${escapeRegex(devName)}\\b`, 'i');
+    if (deviceRegex.test(text)) {
+      detectedDevice = devName;
       break;
     }
   }
 
-  // 3) connectionType
-  if (/\bwifi\b/.test(lower)) result.connectionType = 'wifi';
-  else if (/\bbluetooth\b/.test(lower)) result.connectionType = 'bluetooth';
-  else if (/\bethernet\b|\bnetwork\b/.test(lower)) result.connectionType = 'ethernet';
-
-  // 4) issueTypes matching via MockAPI definitions
-  if (result.componentType) {
-    try {
-      const definitions = await loadIssueDefinitions();
-      const compDef = definitions.find(d => d.componentType === result.componentType);
-      if (compDef && Array.isArray(compDef.issues)) {
-        for (const { issueType, keywords } of compDef.issues) {
-          for (const kw of keywords) {
-            const pat = kw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // escape
-            if (new RegExp(`\\b${pat.toLowerCase()}\\b`).test(lower)) {
-              result.issueTypes.push(issueType);
-              break; // move to next issueType once matched
-            }
-          }
-        }
+  //if a device was detected, check for components
+  let detectedComponent = null;
+  if (detectedDevice && componentsByDevice[detectedDevice]) {
+    for (const compName of componentsByDevice[detectedDevice]) {
+      const compRegex = new RegExp(`\\b${escapeRegex(compName)}\\b`, 'i');
+      if (compRegex.test(text)) {
+        detectedComponent = compName;
+        break;
       }
-    } catch (err) {
-      console.error('Error loading issue definitions:', err);
     }
   }
 
-  return res.status(200).json(result);
-}
+  //filter the patterns based on detected device and component
+  let candidatePatterns = [];
+
+  if (detectedDevice) {
+    //if both device and component were found, only match patterns under that device and component
+    if (detectedComponent) {
+      candidatePatterns = patterns.filter(
+        (p) => p.device === detectedDevice && p.component === detectedComponent
+      );
+    }
+    //if device found but no component matched, match all issues under that device
+    if (!detectedComponent) {
+      candidatePatterns = patterns.filter((p) => p.device === detectedDevice);
+    }
+  }
+  //if no device was mentioned, fallback to matching EVERY pattern
+  if (!detectedDevice) {
+    candidatePatterns = patterns.slice();
+  }
+
+  //run the regex tests on the candidate patterns
+  const matches = [];
+  for (const pat of candidatePatterns) {
+    if (pat.regex.test(text)) {
+      matches.push({
+        device: pat.device,
+        component: pat.component, // string or null
+        issue: pat.issue,
+        description: pat.description,
+        solution: pat.solution,
+      });
+    }
+  }
+
+  return res.json({
+    input: rawText,
+    matches: matches,
+  });
+});
+
+// export for vercel
+export default app;

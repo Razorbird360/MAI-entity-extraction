@@ -1,6 +1,21 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/extract.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
-    { "src": "/extract", "dest": "/api/extract.js" }
+    {
+      "src": "/extract",
+      "methods": ["POST"],
+      "dest": "api/extract.js"
+    },
+    {
+      "src": "/health",
+      "methods": ["GET"],
+      "dest": "api/extract.js"
+    }
   ]
 }

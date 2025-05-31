@@ -1,0 +1,1659 @@
+[
+  {
+    "device": "phone",
+    "components": {
+      "battery": {
+        "not charging": {
+          "description": "The phone does not register that it is plugged in, or the battery level does not increase when connected to a charger.",
+          "solution": "Check the charging cable and adapter for damage. Ensure the port is clean. Try a different charger and wall outlet. Restart your phone. If issues persist, the battery or charging port may need professional repair."
+        },
+        "drains fast": {
+          "description": "The battery loses its charge much quicker than expected or usual, requiring frequent recharging throughout the day.",
+          "solution": "Reduce screen brightness and turn off unnecessary background apps and notifications. Check battery usage in settings to identify power-hungry apps. Consider enabling battery saver mode. If the battery is old, replacement might be needed."
+        },
+        "battery dead": {
+          "description": "The battery has no charge and the phone will not power on, even when connected to a charger for some time.",
+          "solution": "Connect your phone to a charger for at least 30 minutes. Try a different charging cable and adapter. Attempt a force restart. If it doesn't turn on, the battery may need replacement or there could be a hardware issue."
+        },
+        "overheating": {
+          "description": "The phone becomes excessively hot to the touch, especially during charging, heavy use, or in warm environments.",
+          "solution": "Close unused apps, especially games or streaming services. Remove the phone from direct sunlight or hot environments. Take off the case if it's trapping heat. Avoid using the phone heavily while it's charging."
+        },
+        "not detected": {
+          "description": "The phone's operating system does not recognize the battery, or it may display an error message related to the battery.",
+          "solution": "Restart your phone. If the battery is removable and you're comfortable, try reseating it. This issue often indicates a hardware problem with the battery connection or the battery itself, potentially requiring professional service."
+        },
+        "slow charge": {
+          "description": "The phone takes an unusually long time to charge to full capacity compared to its normal charging speed.",
+          "solution": "Use the original charger and cable if possible. Check for dirt or debris in the charging port. Close background apps drawing power. Avoid using the phone while charging. The cable or adapter might be faulty."
+        },
+        "battery swelling": {
+          "description": "The battery physically expands or bulges, potentially causing the phone's casing to deform or separate.",
+          "solution": "Immediately stop using and charging the phone. A swollen battery is a safety hazard and can damage the phone or cause fire. Do not attempt to puncture or compress it. Contact a professional for battery replacement."
+        },
+        "battery percentage stuck": {
+          "description": "The displayed battery percentage remains unchanged for a long period, regardless of charging or usage.",
+          "solution": "Restart your phone. Sometimes, a full charge and discharge cycle can recalibrate the battery sensor. If the issue persists, it might be a software glitch or a failing battery requiring professional assessment."
+        },
+        "won't power on": {
+          "description": "The phone does not turn on or show any signs of life when the power button is pressed, even if it has been charged.",
+          "solution": "Charge the phone for at least 30 minutes. Attempt a force restart. Check if the charging port is clean and the charger is working. If it still doesn't power on, it could be a battery, screen, or motherboard issue needing repair."
+        },
+        "rapid shutdown": {
+          "description": "The phone turns off unexpectedly and suddenly, often when the battery still shows a significant charge remaining.",
+          "solution": "This often indicates an aging or faulty battery that can't provide enough power under load. Update your phone's software. Calibrating the battery by fully charging and discharging might help. Otherwise, a battery replacement is likely needed."
+        }
+      },
+      "display": {
+        "black screen": {
+          "description": "The phone screen remains completely black, showing no image, even though the phone might be powered on (e.g., sounds, vibrations occur).",
+          "solution": "Try a force restart. If the phone makes sounds but the screen is black, it might be a loose connection or display failure. Charge the phone for a while, as a completely drained battery can sometimes cause this."
+        },
+        "dim screen": {
+          "description": "The screen's brightness is very low, making it difficult to see the content, even when brightness settings are adjusted.",
+          "solution": "Check brightness settings in the control center or display settings. Disable auto-brightness or adaptive brightness if it's causing issues. Ensure power-saving mode isn't overly dimming the screen. Overheating can also cause dimming."
+        },
+        "flicker": {
+          "description": "The screen image rapidly flashes or pulses, making it unstable and difficult to view.",
+          "solution": "Restart your phone. Check if adaptive brightness or a blue light filter is causing it and disable them. Update your phone's operating system and apps. In rare cases, it could be a hardware issue like a loose display connector."
+        },
+        "cracked screen": {
+          "description": "The glass surface of the display is physically broken, with visible cracks or shatters.",
+          "solution": "A cracked screen is physical damage and typically requires professional repair or replacement of the display assembly. Using a screen protector and case can help prevent future damage. Be cautious of sharp edges."
+        },
+        "unresponsive screen": {
+          "description": "The display does not react to touches, swipes, or any other input attempts.",
+          "solution": "Restart your phone. Clean the screen with a soft, dry cloth. Remove any screen protector or case that might be interfering. If the issue persists, it could be a software glitch or hardware damage needing repair."
+        },
+        "screen touches itself": {
+          "description": "The screen registers touches or performs actions without any user input, often called 'ghost touch' or 'phantom touch'.",
+          "solution": "Clean the screen thoroughly. Restart the device. Remove any ill-fitting screen protector or case. Sometimes, moisture or a software bug can cause this. If it persists, a factory reset or professional repair might be necessary."
+        },
+        "dead pixels": {
+          "description": "One or more individual pixels on the screen remain permanently black or off, regardless of the displayed content.",
+          "solution": "Dead pixels are usually a hardware defect in the display and cannot be easily fixed with software. Sometimes a stuck pixel (a pixel showing a fixed color) can be massaged or fixed with apps, but true dead (black) pixels generally require screen replacement."
+        },
+        "screen colors wrong": {
+          "description": "The colors on the display appear distorted, inaccurate, inverted, or have an unusual tint.",
+          "solution": "Check display settings for any color correction, color filter, or night mode options that might be enabled. Restart the phone. Ensure the operating system is updated. If colors are inverted or strange, check accessibility settings."
+        },
+        "backlight off": {
+          "description": "The screen image is extremely faint or invisible in normal light, but might be barely visible if a bright light is shone on it.",
+          "solution": "Increase screen brightness to maximum. Try restarting the phone. If the display is faintly visible under bright light but has no backlight, it's likely a hardware failure of the backlight circuit or display, requiring professional repair."
+        },
+        "screen freeze": {
+          "description": "The image on the display becomes static and unresponsive, while the phone itself might still be running in the background.",
+          "solution": "Attempt a force restart. If it happens frequently, try uninstalling recently added apps. Ensure you have enough free storage space. Update your phone's software. A factory reset might be needed if software-related."
+        }
+      },
+      "touchscreen": {
+        "touch not working": {
+          "description": "The touchscreen does not register any taps, swipes, or gestures from the user.",
+          "solution": "Restart your device. Clean the screen. Remove screen protectors or cases. If only a part of the screen is affected, it might be hardware damage. Software updates or a factory reset can sometimes fix software-related unresponsiveness."
+        },
+        "no touch": {
+          "description": "Similar to 'touch not working', the screen is completely unresponsive to any form of touch input.",
+          "solution": "Perform a force restart. Ensure the screen is clean and dry. Screen protectors can sometimes interfere. If the phone was dropped or exposed to liquid, it might be hardware damage requiring professional repair."
+        },
+        "multi-touch not working": {
+          "description": "The screen registers single touches but fails to recognize gestures requiring two or more fingers (e.g., pinch-to-zoom).",
+          "solution": "Restart the phone. Test in safe mode to see if a third-party app is causing the issue. Ensure the screen is clean. This could also be a software bug that an update might fix, or a hardware problem with the digitizer."
+        },
+        "touch lag": {
+          "description": "There is a noticeable delay between touching the screen and the phone's response to that input.",
+          "solution": "Restart your phone. Free up storage space and close background apps. Update your phone's software and all apps. Disable animations in developer options if comfortable. If lag persists, a factory reset could help."
+        },
+        "phantom touches": {
+          "description": "The screen behaves as if it's being touched when no one is interacting with it, causing random actions.",
+          "solution": "Clean the screen thoroughly. Remove any screen protector or case. Restart the phone. Check for moisture. In some cases, a faulty charger can cause this. If it persists, it could be a digitizer issue needing repair."
+        },
+        "touch inaccurate": {
+          "description": "Touches are registered at a different location on the screen than where the user actually touched.",
+          "solution": "Restart your phone. Clean the screen. Remove any screen protector. Some older phones had calibration settings, but modern ones rarely do. If it's consistently inaccurate, it might be a software bug or a hardware problem."
+        },
+        "missed taps": {
+          "description": "The screen sometimes fails to register light or quick taps, requiring multiple attempts.",
+          "solution": "Clean the screen. Ensure your fingers are clean and dry. Remove any thick screen protector. Try increasing touch sensitivity if your phone has this option. Restarting the device may also help with minor glitches."
+        },
+        "swipe not working": {
+          "description": "The touchscreen registers taps but fails to recognize swipe gestures correctly or at all.",
+          "solution": "Restart the phone. Clean the screen. Check if a specific app has issues or if it's system-wide. Ensure no accessibility features are interfering. This could be a software glitch resolved by an update or reset."
+        },
+        "touchscreen no response": {
+          "description": "The entire touchscreen functionality is lost; the phone does not respond to any touch input across the screen.",
+          "solution": "Force restart your phone. If it turns on but touch still doesn't work, clean the screen. Remove peripherals. A damaged screen, loose internal cable, or software corruption could be the cause, possibly needing professional help."
+        },
+        "touch unpredictable": {
+          "description": "The touchscreen's response to input is erratic, sometimes working, sometimes lagging, sometimes registering incorrectly.",
+          "solution": "Clean the screen thoroughly. Restart the device. Remove any screen protector. Boot into safe mode to check if a third-party app is responsible. Persistent issues may require a software update, factory reset, or hardware repair."
+        }
+      },
+      "camera": {
+        "camera crash": {
+          "description": "The camera application closes unexpectedly or freezes when trying to use it.",
+          "solution": "Restart your phone. Clear the cache and data for the camera app in settings. Update the camera app and your phone's operating system. If it persists, try booting in safe mode to check for app conflicts."
+        },
+        "black view": {
+          "description": "The camera app opens, but the viewfinder area shows a black screen instead of the camera's live feed.",
+          "solution": "Restart the camera app and then your phone. Ensure the camera isn't obstructed. Try clearing the camera app's cache and data. Test with a third-party camera app. If the issue persists, it could be a hardware problem."
+        },
+        "blurry image": {
+          "description": "Photos and videos taken with the camera are consistently out of focus or lack sharpness.",
+          "solution": "Clean the camera lens gently with a microfiber cloth. Tap the screen to focus or try manual focus if available. Ensure your hand is steady. Restart the phone. Remove any case or accessory that might interfere."
+        },
+        "focus fail": {
+          "description": "The camera struggles or fails to automatically focus on subjects, resulting in blurry images.",
+          "solution": "Clean the camera lens. Tap on the subject on your screen to help the camera focus. Ensure there's enough light. Restart the camera app and phone. Update camera app and OS. Persistent issues may indicate hardware damage."
+        },
+        "no camera": {
+          "description": "The phone reports that no camera is detected, or the camera app shows an error indicating the camera is unavailable.",
+          "solution": "Restart your phone. Check app permissions to ensure the camera app has access. Clear camera app cache and data. If a \"camera failed\" error appears, it might be a software glitch or hardware issue requiring professional help."
+        },
+        "shutter stuck": {
+          "description": "The camera app freezes on the shutter animation, or the shutter sound plays but no photo is captured or saved.",
+          "solution": "Force close the camera app and reopen it. Restart your phone. Ensure there's enough free storage space on your device. If the issue persists, try clearing the camera app's cache and data, or check for software updates."
+        },
+        "app crash": {
+          "description": "The camera application closes unexpectedly during use, possibly when taking a photo or switching modes.",
+          "solution": "Restart your phone. Update the camera app and the phone's operating system. Clear the camera app's cache and data. Free up storage space if your phone is full. Check for conflicting apps."
+        },
+        "camera flicker": {
+          "description": "The live view in the camera app or recorded videos show a noticeable flickering or banding effect, especially under artificial light.",
+          "solution": "Adjust your lighting conditions, as some artificial lights can cause flicker. Check camera settings for an anti-flicker or anti-banding option (50Hz/60Hz). Restart the phone and update the camera app and OS."
+        },
+        "photos too dark or bright": {
+          "description": "Captured photos are consistently overexposed (too bright) or underexposed (too dark) despite normal lighting conditions.",
+          "solution": "Clean the camera lens. Adjust the exposure by tapping on the screen and using the slider that appears. Try using HDR mode. Check if any specific scene modes or filters are enabled. Ensure proper lighting conditions."
+        },
+        "zoom fail": {
+          "description": "The camera's zoom function (digital or optical) does not work, gets stuck, or produces very poor quality when zooming.",
+          "solution": "Restart the camera app and the phone. Clean the camera lens. Check if zoom works in other camera apps. This could be a software glitch fixed by an update or a hardware problem with the camera module."
+        }
+      },
+      "speakers": {
+        "no sound": {
+          "description": "No audio output from the phone's speakers for calls, media, or notifications, even when volume is up.",
+          "solution": "Check if the volume is turned up and not on silent/vibrate mode. Restart your phone. Ensure Bluetooth is off or not connected to an audio device. Clean the speaker grille gently with a soft brush. Test with headphones."
+        },
+        "low volume": {
+          "description": "The sound output from the speakers is very quiet, even when the volume is set to its maximum level.",
+          "solution": "Increase the volume using the buttons. Clean the speaker grille gently, as dust can muffle sound. Check sound settings for any limiters. Restart your phone. Test in safe mode to rule out app interference."
+        },
+        "crackling": {
+          "description": "The speaker produces a crackling, popping, or static-like noise during audio playback.",
+          "solution": "Lower the volume slightly, as very high volumes can cause distortion. Restart your phone. Check if it happens with all audio or specific apps. Debris in the speaker or water damage can also cause this, possibly requiring repair."
+        },
+        "distortion": {
+          "description": "Audio output from the speakers sounds garbled, fuzzy, or otherwise unclear and distorted.",
+          "solution": "Reduce the volume. Restart the phone. Ensure the audio file isn't the source of distortion. If it happens at all volumes and with all audio, the speaker might be damaged and require professional repair."
+        },
+        "one side audio": {
+          "description": "If the phone has stereo speakers, sound only comes out from one speaker, or is significantly louder on one side.",
+          "solution": "If using headphones, check the headphone connection or try another pair. For phone speakers (if stereo), check balance settings in accessibility options. Clean speaker grilles. This could also be a hardware fault needing repair."
+        },
+        "buzzing": {
+          "description": "A persistent buzzing or humming sound is emitted from the speakers, with or without audio playing.",
+          "solution": "Try lowering the volume. Restart your phone. Check if it happens with specific apps or all audio. It might be due to interference, a loose internal component, or a damaged speaker, which would need professional inspection."
+        },
+        "speaker mute": {
+          "description": "The speaker seems to be permanently muted, and no sound is produced despite volume settings being on.",
+          "solution": "Ensure the phone is not in silent or do-not-disturb mode. Check the volume levels. Restart the device. Make sure no accessibility settings are muting audio. Test with different apps and with headphones."
+        },
+        "audio cutoff": {
+          "description": "The sound from the speakers cuts in and out intermittently during playback.",
+          "solution": "Restart your phone. Check if it occurs with streaming services (possible network issue) or local files. Ensure enough storage space, as low storage can cause performance issues. Update apps and OS. Could be a hardware issue."
+        },
+        "static noise": {
+          "description": "A continuous hissing or static sound comes from the speakers, often independent of audio playback.",
+          "solution": "Restart your phone. Test with different audio sources. Ensure the speaker grille is clean. If using wired headphones, check the port and connection. Persistent static might indicate a hardware problem with the speaker or audio jack."
+        },
+        "speaker rattle": {
+          "description": "A rattling or vibrating noise is heard from the speaker area, especially at higher volumes or with bass-heavy audio.",
+          "solution": "This usually indicates a loose component inside the phone or a damaged speaker cone. Gently check if the phone's back cover is secure. This issue often requires professional inspection and repair to fix the physical problem."
+        }
+      },
+      "microphone": {
+        "mic dead": {
+          "description": "The microphone does not pick up any sound at all; others cannot hear you during calls, and voice recordings are silent.",
+          "solution": "Restart your phone. Test the microphone with a voice recorder app. Ensure the microphone opening isn't blocked by dirt, debris, or a case. Check app permissions for microphone access. If it fails everywhere, it's likely hardware."
+        },
+        "low mic volume": {
+          "description": "Your voice is very quiet or faint to others during calls or in recordings, even when speaking normally.",
+          "solution": "Clean the microphone port gently with a soft, dry brush or compressed air. Remove any case or screen protector that might be obstructing it. Check microphone settings in apps if available. Restart the phone."
+        },
+        "no mic": {
+          "description": "Similar to 'mic dead', the phone or apps report no microphone is available or connected.",
+          "solution": "Restart your phone. Grant microphone permissions to the app you're using. Clean the microphone opening. Test with different apps. If it's not working anywhere, it's likely a hardware failure requiring repair."
+        },
+        "muffled audio": {
+          "description": "Sound picked up by the microphone is unclear, as if obstructed or recorded through a barrier.",
+          "solution": "Ensure the microphone hole is not covered by your hand, case, or debris. Clean it gently. Restart your phone. Test without any connected Bluetooth devices. Persistent issues might point to a hardware fault."
+        },
+        "mic crackle": {
+          "description": "A crackling or static-like noise is present in the audio picked up by the microphone.",
+          "solution": "Restart your phone. Check for loose debris near the microphone. Test if it occurs in all apps or just one. A poor cellular or Wi-Fi connection can sometimes cause crackling during calls. Hardware damage could also be a cause."
+        },
+        "mic distortion": {
+          "description": "Your voice sounds garbled, fuzzy, or electronically distorted to others or in recordings.",
+          "solution": "Try speaking softer if you are too close or loud. Restart the phone. Ensure the microphone port is clean. Test in different apps. If distortion is consistent, the microphone hardware may be damaged."
+        },
+        "too much background noise": {
+          "description": "The microphone picks up an excessive amount of ambient sounds, making your voice hard to distinguish.",
+          "solution": "Move to a quieter environment if possible. Some phones have noise suppression features; check if it's enabled. Clean the microphone port. Ensure your phone's software is up to date, as updates can improve audio processing."
+        },
+        "caller can't hear me": {
+          "description": "People on the other end of a phone call report that they cannot hear you, or your voice is extremely faint.",
+          "solution": "Check if your microphone is muted. Restart your phone. Clean the microphone port. Ensure the phone app has microphone permission. Test with a voice recording. If it persists, it could be network issues or a faulty microphone."
+        },
+        "call drop": {
+          "description": "Phone calls are unexpectedly disconnected or terminated mid-conversation.",
+          "solution": "Check your signal strength; move to an area with better reception. Restart your phone. Reinsert your SIM card. Ensure your carrier settings are up to date. Frequent call drops might also indicate a SIM card or network hardware problem."
+        },
+        "my voice cuts out": {
+          "description": "During calls, your voice intermittently drops out or becomes inaudible to the other person.",
+          "solution": "Ensure a stable network connection (Wi-Fi or cellular). Clean the microphone port. Restart your phone. Close background apps that might be using resources. If it happens on all calls, the microphone hardware might be failing."
+        }
+      },
+      "charging port": {
+        "port loose": {
+          "description": "The charging cable fits loosely into the port, or wiggles significantly, potentially disrupting the connection.",
+          "solution": "This usually indicates physical wear or damage to the charging port. Be very gentle when connecting the cable. Using a different, high-quality cable might help temporarily. Professional repair or port replacement is often needed."
+        },
+        "no contact": {
+          "description": "The phone doesn't recognize a charger being plugged in, or makes no electrical contact despite the cable being inserted.",
+          "solution": "Carefully clean the charging port with a soft, dry brush or compressed air to remove lint or debris. Try a different charging cable and adapter. If there's still no contact, the port might be damaged internally and require repair."
+        },
+        "spark from port": {
+          "description": "A visible spark is seen when plugging the charging cable into the phone's port.",
+          "solution": "Immediately unplug the charger. Do not attempt to use the port or charger again. This is a serious safety risk indicating a short circuit or severe damage. The port and possibly the charger need professional inspection and repair."
+        },
+        "port jammed": {
+          "description": "The charging cable cannot be fully inserted into the port, or something feels like it's blocking it.",
+          "solution": "Visually inspect the port for foreign objects. If you see something, try to remove it very carefully with a non-metallic, thin tool (like a wooden toothpick), or use compressed air. If unsure, seek professional help to avoid damage."
+        },
+        "dirt in port": {
+          "description": "Visible lint, dust, or other debris is accumulated inside the charging port, preventing a good connection.",
+          "solution": "Turn off the phone. Use a can of compressed air to blow out debris. Alternatively, gently use a soft, dry, non-metallic tool like a wooden or plastic toothpick to carefully clean out lint. Avoid damaging the pins."
+        },
+        "broken pin": {
+          "description": "One or more of the small contact pins inside the charging port are visibly bent, broken, or missing.",
+          "solution": "If a pin inside the charging port is visibly bent or broken, do not attempt to use it, as it can cause further damage or a short circuit. The charging port will need to be professionally replaced."
+        },
+        "intermittent charging": {
+          "description": "Charging starts and stops randomly, or only works if the cable is held in a specific position.",
+          "solution": "Try a different charging cable and adapter. Clean the charging port. The port itself might be loose or damaged. Wiggling the cable to get it to charge is a temporary fix; port repair or replacement is likely needed."
+        },
+        "slow charge": {
+          "description": "The device charges much slower than usual, even with a compatible charger, potentially due to poor port connection.",
+          "solution": "Ensure you are using a compatible, high-quality charger and cable. Clean the charging port. Close power-hungry apps running in the background. If the port is damaged or worn, it may not make a good connection, leading to slow charging."
+        },
+        "port fail": {
+          "description": "The charging port has completely stopped working and does not allow the phone to charge or connect via cable.",
+          "solution": "If cleaning the port and trying different cables/chargers doesn't work, the charging port has likely failed due to damage or wear. It will need to be professionally repaired or replaced to restore charging functionality."
+        },
+        "charger not detected": {
+          "description": "The phone does not recognize when a charger is connected, or displays a message that the charger is not supported.",
+          "solution": "Clean the charging port. Try a different charger and cable. Restart your phone. This can be due to a faulty port, cable, adapter, or even a software issue. If problems persist, professional diagnosis is needed."
+        }
+      },
+      "network radio": {
+        "wifi drop": {
+          "description": "The phone frequently disconnects from Wi-Fi networks even when in range and other devices stay connected.",
+          "solution": "Restart your phone and Wi-Fi router. Forget the Wi-Fi network and reconnect. Ensure your phone's OS is updated. Check if other devices on the same network have issues. Reset network settings on your phone if persistent."
+        },
+        "no wifi": {
+          "description": "The phone cannot find or connect to any Wi-Fi networks, or the Wi-Fi toggle is unresponsive or greyed out.",
+          "solution": "Ensure Wi-Fi is turned on in your phone settings. Restart your phone and router. Check if other devices can connect to the Wi-Fi. Try connecting to a different network. Resetting network settings might help."
+        },
+        "slow wifi": {
+          "description": "Internet speeds are significantly slower than expected when connected to Wi-Fi, compared to other devices or wired connections.",
+          "solution": "Restart your phone and Wi-Fi router. Move closer to the router. Check for interference from other devices. Test Wi-Fi speed on other devices. Too many devices on the network can also slow it down."
+        },
+        "no sim": {
+          "description": "The phone displays a 'No SIM card' or 'SIM error' message, and cannot connect to cellular networks.",
+          "solution": "Restart your phone. Remove and reinsert the SIM card. Ensure the SIM card is inserted correctly and not damaged. Try the SIM card in another phone to see if the SIM is faulty. Contact your carrier if needed."
+        },
+        "no signal": {
+          "description": "The phone shows no cellular network bars or an 'emergency calls only' message, even in areas with known coverage.",
+          "solution": "Check if you are in an area with network coverage. Restart your phone. Toggle Airplane mode on and off. Reseat your SIM card. Check for carrier outages. If persistent, it could be a SIM or hardware issue."
+        },
+        "LTE drop": {
+          "description": "The phone frequently loses its LTE/4G connection, reverting to slower 3G/2G networks or losing data entirely.",
+          "solution": "Toggle Airplane mode. Restart your phone. Check for carrier software updates. Reset network settings. This could be due to poor coverage in your area or a temporary network issue. Contact your carrier if it persists."
+        },
+        "5g fail": {
+          "description": "The phone does not connect to 5G networks even when in a 5G coverage area and with a 5G-compatible plan/SIM.",
+          "solution": "Ensure your phone plan and SIM card support 5G. Verify you are in a 5G coverage area. Restart your phone. Toggle Airplane mode. Check for carrier settings updates. Reset network settings if the problem continues."
+        },
+        "no bluetooth": {
+          "description": "The phone cannot detect or connect to any Bluetooth devices, or the Bluetooth toggle is unresponsive.",
+          "solution": "Ensure Bluetooth is enabled on your phone. Restart your phone. Toggle Bluetooth off and on. Unpair and re-pair the Bluetooth device. Check if the Bluetooth device is discoverable and charged. Update your phone's OS."
+        },
+        "pairing fail": {
+          "description": "The phone attempts to pair with a Bluetooth device but the process consistently fails or times out.",
+          "solution": "Ensure both devices are in pairing mode and close to each other. Turn Bluetooth off and on for both. Restart both devices. Clear the Bluetooth cache on your phone. Remove the device from paired list and try again."
+        },
+        "network error": {
+          "description": "A generic error message related to network connectivity (cellular or Wi-Fi) appears, preventing access.",
+          "solution": "Toggle Airplane mode on and off. Restart your phone. Reset network settings. Check for outages with your mobile carrier or internet service provider. Ensure your account is in good standing and data services are active."
+        }
+      },
+      "storage": {
+        "full storage": {
+          "description": "The phone reports that its internal storage is full or nearly full, preventing new app installs or data saving.",
+          "solution": "Delete unnecessary apps, photos, videos, and files. Clear app caches. Transfer files to a computer or cloud storage. Use a storage analyzer tool to see what's taking up space. Add an SD card if your phone supports it."
+        },
+        "can't open files": {
+          "description": "Attempts to open files (documents, images, videos) result in an error message or the file failing to load.",
+          "solution": "Ensure you have a compatible app to open the file type. Check if the file is corrupted; try downloading it again. Ensure there's enough free storage. Restart your phone. The storage itself might have errors."
+        },
+        "can't save files": {
+          "description": "The phone or apps are unable to save new files or data, often due to insufficient space or permission issues.",
+          "solution": "Check if you have enough free storage space. Ensure the app has permission to write to storage. Restart the phone. If saving to an SD card, ensure it's not corrupted or write-protected."
+        },
+        "slow storage": {
+          "description": "The phone's overall performance is sluggish, apps load slowly, and file access times are long due to slow storage.",
+          "solution": "Free up storage space, as near-full storage can slow down performance. Clear caches of apps. Uninstall unused apps. Restart the phone. If performance is extremely poor, the storage hardware might be failing."
+        },
+        "storage corrupt": {
+          "description": "The phone's storage (internal or SD card) has become corrupted, making data inaccessible or causing system instability.",
+          "solution": "This is a serious issue. If it's an SD card, try reading it on a computer with recovery software (data loss is possible). For internal storage, a factory reset might be the only option, which erases all data. Professional help may be needed."
+        },
+        "storage not showing up": {
+          "description": "An SD card is not detected by the phone, or internal storage capacity is reported incorrectly or not at all.",
+          "solution": "If it's an SD card, remove and reinsert it. Try it in another device or a card reader. Restart your phone. The card might be corrupted or improperly formatted. For internal storage issues, seek professional help."
+        },
+        "file error": {
+          "description": "A generic error message related to file handling, reading, or writing occurs.",
+          "solution": "Try opening the file with a different app. The file itself might be corrupted or in an unsupported format. Download the file again if possible. Ensure your phone's software is up to date."
+        },
+        "format fail": {
+          "description": "An attempt to format the phone's storage or an SD card fails with an error message.",
+          "solution": "If trying to format an SD card, attempt formatting it on a computer. Ensure the card is not physically damaged or write-protected. The SD card itself might be faulty and need replacement."
+        },
+        "data loss": {
+          "description": "Files and data have unexpectedly disappeared from the phone's storage without user deletion.",
+          "solution": "If files are accidentally deleted, stop using the phone immediately to avoid overwriting data. Try data recovery software (results vary). Regularly back up your phone to prevent permanent data loss. Professional data recovery services exist."
+        },
+        "storage problem": {
+          "description": "A general, unspecified issue related to the phone's storage functionality or reliability.",
+          "solution": "Restart your phone. Update the operating system. If an SD card is involved, test it for errors on a computer. Persistent internal storage problems may require a factory reset (backup data first) or professional repair."
+        }
+      },
+      "fingerprint": {
+        "not working": {
+          "description": "The fingerprint sensor fails to recognize registered fingerprints or does not respond at all.",
+          "solution": "Clean the fingerprint sensor and your finger. Restart your phone. Re-register your fingerprint in settings. Ensure your phone's software is updated. If it still fails, the sensor might be dirty internally or damaged."
+        },
+        "not detected": {
+          "description": "The phone's operating system does not detect the fingerprint sensor hardware, or the option to set up fingerprints is missing.",
+          "solution": "Ensure the fingerprint sensor is clean. Restart your phone. Try re-adding your fingerprints in the security settings. If the option to set up fingerprints is missing or greyed out, it could be a hardware issue needing repair."
+        },
+        "can't scan": {
+          "description": "The fingerprint sensor attempts to scan but consistently fails to capture a usable image of the fingerprint.",
+          "solution": "Clean both the sensor and your finger. Ensure your finger covers the sensor properly. Moisture, dirt, or scars can affect scanning. Try registering the same finger multiple times at different angles in settings."
+        },
+        "scan failed": {
+          "description": "The fingerprint sensor reports a scan failure message after attempting to read a fingerprint.",
+          "solution": "Wipe the sensor and your finger dry. Try a different registered finger. Restart your phone. Delete existing fingerprints and add them again carefully. Too many failed attempts can temporarily disable the sensor."
+        },
+        "too slow": {
+          "description": "There is a significant delay between placing a finger on the sensor and the phone unlocking or recognizing the print.",
+          "solution": "Clean the fingerprint sensor. Restart your phone. Re-register your fingerprints. Sometimes, software updates can improve sensor performance. Ensure no thick screen protector is interfering if it's an in-display sensor."
+        },
+        "scan error": {
+          "description": "The fingerprint sensor displays a generic error message during the scanning process.",
+          "solution": "Clean the sensor and your finger. Restart your device. Remove and re-add your fingerprints. Ensure the phone's software is up to date. Persistent errors may indicate a faulty sensor requiring professional attention."
+        },
+        "won't unlock": {
+          "description": "The fingerprint sensor recognizes the attempt to scan but fails to unlock the phone even with a registered fingerprint.",
+          "solution": "Clean the sensor and your finger. Ensure you are using a registered finger. Restart the phone. Re-add your fingerprint data. If many attempts fail, you might be locked out; use your PIN/password/pattern to unlock first."
+        },
+        "unlock failed": {
+          "description": "After a scan attempt, the phone indicates that the fingerprint unlock has failed.",
+          "solution": "Make sure the sensor and your finger are clean and dry. Try again, ensuring full contact. If it repeatedly fails, use your alternative unlock method (PIN/pattern). Consider re-registering your fingerprints for better accuracy."
+        },
+        "reader stuck": {
+          "description": "If the fingerprint reader is a physical button, it may be physically stuck or unresponsive. If software-based, the sensor process may be frozen.",
+          "solution": "If referring to a physical button, check for debris. If it's software-related (not responding), restart the phone. Clear cache for fingerprint-related system apps if possible. A hardware issue might need repair."
+        },
+        "not responding": {
+          "description": "The fingerprint sensor shows no reaction at all when a finger is placed on it; no scan attempt is initiated.",
+          "solution": "Restart your phone. Clean the fingerprint sensor. Check for software updates. If the sensor consistently doesn't respond, even after re-adding fingerprints, it might be a hardware malfunction needing professional repair."
+        }
+      }
+    }
+  },
+  {
+    "device": "laptop",
+    "components": {
+      "battery": {
+        "not charging": {
+          "description": "The laptop does not charge when the AC adapter is plugged in, or the battery icon indicates 'plugged in, not charging'.",
+          "solution": "Ensure the charger is correctly plugged into both the laptop and a working wall outlet. Inspect the charging cable and adapter for any physical damage. Try a different charger if possible. Restart the laptop. Check battery health in system settings or using manufacturer diagnostic tools."
+        },
+        "drains fast": {
+          "description": "The laptop battery depletes its charge much faster than usual, significantly reducing unplugged usage time.",
+          "solution": "Reduce screen brightness, close unnecessary applications, and disconnect unused peripherals. Adjust power settings to a more conservative plan. Check for background processes consuming high power. Battery calibration or, if aged, replacement might be necessary."
+        },
+        "won't hold charge": {
+          "description": "The battery charges but loses its charge very quickly, or the laptop shuts down as soon as the AC adapter is unplugged.",
+          "solution": "This often indicates an old or failing battery. Run a battery health check using manufacturer tools or system diagnostics. Consider battery calibration. If the battery health is poor, replacement is the most likely solution."
+        },
+        "shuts off suddenly": {
+          "description": "The laptop powers off abruptly without warning, often when running on battery power even if it shows charge.",
+          "solution": "This could be due to an overheating issue or a failing battery. Ensure cooling vents are clear and the fan is working. Run a battery diagnostic. If the battery is faulty, it may need replacement."
+        },
+        "overheating": {
+          "description": "The battery area or the entire laptop becomes excessively hot, particularly during charging or intensive use.",
+          "solution": "Ensure the laptop's cooling vents are not blocked and are free of dust. Use the laptop on a hard, flat surface. Consider using a cooling pad. Close resource-intensive applications. If persistent, internal cleaning or fan check may be needed."
+        },
+        "slow charging": {
+          "description": "The laptop battery takes an unusually long time to reach full charge compared to its normal charging duration.",
+          "solution": "Use the original or a certified charger with the correct wattage. Ensure the charging port is clean and not damaged. Close demanding applications while charging. Some laptops have settings that optimize for battery longevity by slowing charging, check these."
+        },
+        "won't turn on": {
+          "description": "The laptop shows no signs of power or fails to boot up when the power button is pressed, even with the AC adapter connected.",
+          "solution": "Ensure the laptop is charged by connecting the AC adapter and waiting. Try a hard reset (remove battery if possible, hold power button). If it only powers on with AC adapter, the battery might be dead. Otherwise, it could be a more serious hardware issue."
+        },
+        "dies quickly": {
+          "description": "Similar to 'drains fast', the usable time on a full battery charge is significantly shorter than expected.",
+          "solution": "Calibrate the battery. Reduce screen brightness and background processes. Check battery health; an old battery will naturally have reduced capacity and may need replacement. Update power management drivers."
+        },
+        "charging stops": {
+          "description": "The battery starts charging but then stops before reaching full capacity, or charging is intermittent.",
+          "solution": "Check the charger connection for looseness at both ends. Inspect the cable for damage. Clean the charging port. Sometimes, power management settings or outdated battery drivers can cause this; update drivers or reset power plans."
+        },
+        "battery error": {
+          "description": "The operating system displays an error message related to the battery, such as 'consider replacing your battery' or a red X over the icon.",
+          "solution": "Restart the laptop. Run a battery diagnostic tool provided by the manufacturer or within Windows. Update or reinstall the battery drivers via Device Manager. If the error persists, the battery may be faulty and require replacement."
+        }
+      },
+      "display": {
+        "screen goes black": {
+          "description": "The laptop display suddenly turns off or goes completely black during use, though the system may still be running.",
+          "solution": "Check if the laptop is in sleep mode by pressing a key or moving the mouse. Ensure display brightness isn't set to minimum. Connect to an external monitor to test if the GPU is working. Update or reinstall display drivers. It could be a loose internal cable."
+        },
+        "flickering": {
+          "description": "The image on the laptop screen flashes, strobes, or shows unstable lines, making it difficult to view.",
+          "solution": "Update graphics drivers. Check display cable connections if comfortable opening the laptop (or seek professional help). Test with an external monitor to isolate if it's the screen or GPU. Adjust refresh rate settings."
+        },
+        "dim": {
+          "description": "The laptop screen is noticeably darker than usual, even with brightness settings turned up.",
+          "solution": "Adjust brightness settings using function keys or display settings. Disable any adaptive brightness settings. Ensure power saving modes aren't overly dimming the screen. If it's consistently dim, backlight issues may require professional repair."
+        },
+        "stuck pixels": {
+          "description": "One or more pixels on the screen display a fixed color (e.g., red, green, blue) and do not change with the image.",
+          "solution": "Try gently massaging the area with a soft cloth. Use pixel-fixing software or videos that rapidly cycle colors. Sometimes stuck pixels resolve on their own. If they are true dead pixels (always black), screen replacement is often the only fix."
+        },
+        "colors off": {
+          "description": "Colors on the display appear washed out, too vibrant, have an incorrect tint, or are generally inaccurate.",
+          "solution": "Check color calibration settings in display properties or graphics control panel. Ensure night light or similar color-altering features are off. Update graphics drivers. A faulty display cable or panel could also be the cause."
+        },
+        "backlight off": {
+          "description": "The screen appears very dark or black, but a faint image might be visible when shining a light on it. The screen illumination is gone.",
+          "solution": "Increase brightness to maximum. Shine a flashlight on the screen; if you can faintly see an image, the backlight has failed. This typically requires professional screen repair or replacement as it's a hardware issue."
+        },
+        "cracked": {
+          "description": "The laptop's screen has visible physical cracks or damage, often resulting from impact or pressure.",
+          "solution": "A cracked laptop screen is physical damage requiring replacement of the display panel. This is a delicate repair best handled by professionals unless you have experience with laptop disassembly and component replacement."
+        },
+        "no image": {
+          "description": "The laptop powers on (lights, fan noise), but there is no picture or image displayed on the screen at all.",
+          "solution": "Connect to an external display. If the external display works, the laptop's screen or its internal connection is likely the issue. If no image on external display either, it could be a GPU or motherboard problem. Try a hard reset."
+        },
+        "lines on screen": {
+          "description": "Horizontal or vertical lines, either static or moving, appear on the laptop display.",
+          "solution": "This can be caused by outdated or corrupt graphics drivers; update them. A loose or damaged display cable is a common culprit. It could also indicate a failing GPU or a damaged LCD panel, often requiring professional repair."
+        },
+        "freezes": {
+          "description": "The image on the display becomes static and unresponsive, and the entire system may also become unresponsive.",
+          "solution": "If the entire system freezes, it could be software, driver, or hardware related (RAM, storage, CPU/GPU overheating). If only the display image freezes but system responds (e.g., sound continues), check graphics drivers and for overheating."
+        }
+      },
+      "keyboard": {
+        "keys not working": {
+          "description": "One or more keys on the laptop keyboard do not register any input when pressed.",
+          "solution": "Restart the laptop. Check for debris under the affected keys and clean gently with compressed air. Update or reinstall keyboard drivers from Device Manager. Test with an external keyboard to see if it's a hardware or software issue."
+        },
+        "types wrong letters": {
+          "description": "Pressing a key results in a different character or symbol appearing on the screen than expected.",
+          "solution": "Check if the keyboard language layout is set correctly in Windows settings. Ensure Num Lock or other special function keys aren't inadvertently enabled. Scan for malware. If widespread, it could be a hardware fault."
+        },
+        "stuck keys": {
+          "description": "A key remains physically depressed after being pressed, or continues to input its character without being held down.",
+          "solution": "Turn off the laptop and try to gently clean around and under the stuck key with compressed air or a soft brush. If a spill occurred, the internal mechanism might be sticky and require careful cleaning or keycap removal."
+        },
+        "input lag": {
+          "description": "There is a noticeable delay between pressing a key and the character appearing on the screen.",
+          "solution": "Close background applications consuming system resources. Update keyboard drivers. Check for malware. If wireless, check battery and interference. Ensure system performance isn't generally sluggish due to other hardware or software issues."
+        },
+        "not detected": {
+          "description": "The laptop does not recognize the built-in keyboard at all, or it disappears from Device Manager.",
+          "solution": "Restart the laptop. Check Device Manager for keyboard entries; if missing or has an error, try reinstalling drivers. Ensure no physical damage to keyboard or its internal connector. An external keyboard can help diagnose."
+        },
+        "backlight off": {
+          "description": "The keyboard's backlight illumination does not turn on, even when the feature is enabled.",
+          "solution": "Ensure the keyboard backlight is enabled via its dedicated function key (often Fn + a specific F-key). Check settings in manufacturer's control software or Windows Mobility Center. Update keyboard drivers or related utility software."
+        },
+        "delayed response": {
+          "description": "Similar to 'input lag', characters appear slowly or inconsistently after keys are pressed.",
+          "solution": "Close resource-heavy background tasks. Update keyboard drivers and your operating system. Check for high CPU or RAM usage. Scan for malware. If it's a general system lag, address the underlying performance issue."
+        },
+        "ghost typing": {
+          "description": "Characters appear on screen as if keys are being pressed, even when the keyboard is not being touched.",
+          "solution": "Clean the keyboard thoroughly for any stuck keys or debris. Scan for malware. Outdated or corrupt keyboard drivers could be a cause. In some cases, it can be a sign of a failing keyboard requiring replacement."
+        },
+        "no backlight": {
+          "description": "The keyboard is supposed to have a backlight feature, but it does not illuminate at all.",
+          "solution": "Verify the backlight is turned on using the correct function key combination. Check for specific keyboard utility software from the laptop manufacturer that controls backlighting. Update drivers. It might be a hardware failure if settings are correct."
+        },
+        "random presses": {
+          "description": "The keyboard inputs characters or activates functions randomly without user interaction.",
+          "solution": "Clean the keyboard thoroughly for debris or sticky keys. Scan for malware, as this can cause erratic input. Outdated or corrupted keyboard drivers are another possibility. If these don't help, a hardware fault in the keyboard is likely."
+        }
+      },
+      "touchpad": {
+        "not moving cursor": {
+          "description": "The mouse pointer on the screen does not move when using the touchpad.",
+          "solution": "Ensure the touchpad isn't disabled via a function key (e.g., Fn + F7) or a physical switch. Restart the laptop. Update or reinstall touchpad drivers from Device Manager or the manufacturer's website."
+        },
+        "taps not working": {
+          "description": "Tapping the touchpad surface to simulate a mouse click does not register or perform any action.",
+          "solution": "Check touchpad settings in Windows to ensure tap-to-click is enabled. Update touchpad drivers. Clean the touchpad surface. Sometimes a driver reinstall or system restart resolves this."
+        },
+        "swipe not working": {
+          "description": "Multi-finger swipe gestures (e.g., for scrolling, switching apps) on the touchpad are unresponsive.",
+          "solution": "Ensure multi-finger gestures are enabled in touchpad settings (e.g., three-finger swipe). Update to the latest touchpad drivers. Some driver versions or specific laptop models might have issues with certain gestures."
+        },
+        "weird movement": {
+          "description": "The cursor moves erratically, unpredictably, or drifts across the screen when using the touchpad.",
+          "solution": "Clean the touchpad surface. Adjust touchpad sensitivity settings. Ensure your hands are clean and dry. Outdated drivers or interference from other devices (like a faulty charger) can sometimes cause erratic behavior."
+        },
+        "too sensitive": {
+          "description": "The cursor moves too quickly or reacts to very light touches, making precise control difficult.",
+          "solution": "Adjust touchpad sensitivity settings in Windows (Settings > Devices > Touchpad). Update touchpad drivers. Some drivers offer advanced settings like palm rejection which can be tweaked."
+        },
+        "too slow": {
+          "description": "The cursor moves very slowly across the screen in response to touchpad input, requiring large movements.",
+          "solution": "Increase cursor speed in touchpad settings within Windows. Ensure the touchpad surface is clean. Outdated drivers can sometimes cause sluggishness; update them."
+        },
+        "no click": {
+          "description": "The physical buttons of the touchpad, or the tap-to-click feature, do not register a click.",
+          "solution": "If physical buttons aren't working, check for debris around them. If tap-to-click isn't working, ensure it's enabled in settings. Driver issues can also prevent clicks; update or reinstall touchpad drivers."
+        },
+        "freezes": {
+          "description": "The touchpad becomes completely unresponsive intermittently or permanently, while the rest of the system might still work.",
+          "solution": "Restart the laptop. Update touchpad drivers. Check if the system is freezing entirely or just the touchpad. If general freezing, it could be RAM or CPU issues. A temporary fix might be to disable and re-enable the touchpad in Device Manager."
+        },
+        "jumps around": {
+          "description": "The cursor jumps to random positions on the screen while using the touchpad.",
+          "solution": "Clean the touchpad. Adjust sensitivity and palm rejection settings. Ensure your hands aren't oily or wet. Faulty chargers or static electricity can sometimes cause this. Update drivers."
+        },
+        "palm detection fail": {
+          "description": "The touchpad registers input from the palm of the hand while typing, causing unwanted cursor movement or clicks.",
+          "solution": "Adjust palm rejection or touchpad sensitivity settings if available in your touchpad driver software or Windows settings. Keeping drivers updated is important. Some touchpads are inherently more prone to this."
+        }
+      },
+      "speakers": {
+        "no sound": {
+          "description": "No audio can be heard from the laptop's built-in speakers, for any application or system sound.",
+          "solution": "Check volume levels and ensure mute is not enabled. Restart the laptop. Select the correct playback device in sound settings. Update or reinstall audio drivers from Device Manager or manufacturer's website. Test with headphones."
+        },
+        "low volume": {
+          "description": "The maximum volume from the speakers is very quiet and difficult to hear properly.",
+          "solution": "Ensure system volume and application volume are at maximum. Check for any sound enhancement settings that might be lowering volume. Update audio drivers. Clean speaker grilles gently if they appear clogged."
+        },
+        "crackling": {
+          "description": "A crackling, popping, or static-like noise is emitted from the speakers during audio playback.",
+          "solution": "Update audio drivers. Check if the issue occurs with all audio or specific files/apps. Lower the volume, as very high levels can cause distortion. Loose internal connections or damaged speakers might require repair."
+        },
+        "distorted": {
+          "description": "Sound from the speakers is garbled, fuzzy, or unclear, not representing the original audio faithfully.",
+          "solution": "Lower the volume. Update audio drivers. Test with different audio files/sources to rule out a bad file. If distortion occurs at all volumes, the speakers may be damaged or there could be an issue with the audio processing."
+        },
+        "cuts out": {
+          "description": "Audio playback from the speakers intermittently stops and starts.",
+          "solution": "Update audio drivers. Check for loose headphone jack connections if using headphones. Ensure Windows is up to date. Insufficient system resources or overheating can sometimes cause audio to cut out during demanding tasks."
+        },
+        "buzzing": {
+          "description": "A persistent buzzing or humming noise comes from the speakers, sometimes related to electrical interference.",
+          "solution": "Try a different power outlet, as electrical interference can cause buzzing. Update audio drivers. If the buzzing is persistent and occurs even on battery power, it could be a grounding issue or internal hardware problem."
+        },
+        "one side only": {
+          "description": "Sound is produced from only one of the laptop's stereo speakers, or is significantly louder on one side.",
+          "solution": "Check audio balance settings in sound properties. Test with headphones to see if the issue is with the laptop speakers or the audio output. Update audio drivers. A faulty speaker or wiring could be the cause."
+        },
+        "muffled": {
+          "description": "Audio from the speakers sounds dull, unclear, or as if it's being obstructed.",
+          "solution": "Ensure speaker grilles are not obstructed or dirty; clean gently. Check sound enhancement settings (like equalizer presets) and try disabling them. Update audio drivers. Water damage can also cause muffled sound."
+        },
+        "popping": {
+          "description": "Sudden, sharp popping sounds are heard from the speakers, sometimes when audio starts or stops.",
+          "solution": "Update audio drivers. This can sometimes be caused by driver conflicts or issues with system resources. Try disabling sound effects. In some cases, it can indicate a hardware problem with the speakers or audio circuitry."
+        },
+        "echo": {
+          "description": "An echoing effect is heard in the audio output, or sound seems to repeat slightly delayed.",
+          "solution": "If using a microphone and speakers simultaneously (e.g., during a call), try lowering speaker volume or using headphones to prevent feedback. Check for \"Listen to this device\" being enabled in microphone properties. Disable audio enhancements."
+        }
+      },
+      "network adapter": {
+        "can't connect": {
+          "description": "The laptop is unable to establish a connection to any Wi-Fi network or a wired Ethernet network.",
+          "solution": "Restart your laptop and your modem/router. Ensure Wi-Fi is enabled on your laptop (check physical switch or Fn key). Re-enter the Wi-Fi password. Run the Windows Network Troubleshooter."
+        },
+        "drops out": {
+          "description": "The laptop frequently loses its connection to the Wi-Fi or wired network.",
+          "solution": "Update your wireless adapter drivers. Move closer to the Wi-Fi router to improve signal strength. Change the Wi-Fi channel on your router to reduce interference. Reset network settings on your laptop."
+        },
+        "slow speed": {
+          "description": "Internet connection speed on the laptop is significantly slower than expected or compared to other devices on the same network.",
+          "solution": "Restart your modem and router. Test internet speed on other devices. Update wireless adapter drivers. Close bandwidth-heavy applications. Ensure you're connected to the correct Wi-Fi band (5GHz is often faster but shorter range)."
+        },
+        "no signal": {
+          "description": "The laptop detects no Wi-Fi networks, or shows no signal bars for a wired connection that should be active.",
+          "solution": "Ensure the Wi-Fi adapter is enabled in Device Manager and that Airplane Mode is off. Restart your laptop and router. Check if other devices can see the network. Your laptop's Wi-Fi adapter might be faulty."
+        },
+        "not detected": {
+          "description": "The network adapter (Wi-Fi or Ethernet) is not listed in Device Manager or the operating system reports it as missing.",
+          "solution": "Restart the laptop. Check in Device Manager if the network adapter is listed and enabled. If it has an error, try updating or reinstalling the driver. A BIOS update or hardware issue could also be the cause."
+        },
+        "authentication fail": {
+          "description": "The laptop fails to connect to a Wi-Fi network, often with an 'authentication failed' or 'incorrect password' error, even if the password seems correct.",
+          "solution": "Double-check you are entering the correct Wi-Fi password. Restart your router and laptop. 'Forget' the network in Wi-Fi settings and try reconnecting. Ensure router security settings (WPA2/3) are compatible."
+        },
+        "limited access": {
+          "description": "The laptop connects to the network but has 'limited' or 'no internet' access, indicated by a yellow exclamation mark.",
+          "solution": "Restart your laptop and router. Run the Windows Network Troubleshooter. Try flushing DNS and resetting TCP/IP stack using command prompt (netsh int ip reset, ipconfig /flushdns). Check for IP address conflicts."
+        },
+        "intermittent": {
+          "description": "The network connection randomly drops and reconnects, or performance is erratic.",
+          "solution": "Update network adapter drivers and router firmware. Change Wi-Fi channel on the router. Check for interference from other wireless devices or appliances. A failing network adapter or router could also be the cause."
+        },
+        "unstable": {
+          "description": "The network connection is generally unreliable, with frequent drops, slow periods, or high latency.",
+          "solution": "Ensure network adapter drivers are current. Move closer to the router. Minimize interference. Consider resetting network settings. If others on the network experience similar issues, the problem might be with the router or ISP."
+        },
+        "no internet": {
+          "description": "The laptop is connected to the network (Wi-Fi or wired) but cannot access the internet or any online services.",
+          "solution": "Restart your laptop, modem, and router. Check network cable connections if using Ethernet. Run Windows Network Troubleshooter. Ensure date and time are correct on your laptop. It could be an ISP outage."
+        }
+      },
+      "storage": {
+        "read error": {
+          "description": "The laptop encounters errors when trying to read data from the hard drive or SSD, potentially leading to crashes or file inaccessibility.",
+          "solution": "Run Check Disk utility (chkdsk) to scan for and attempt to repair file system errors. Ensure the drive's connection is secure (if an external or recently installed internal drive). Back up data immediately if possible, as this can indicate a failing drive."
+        },
+        "write error": {
+          "description": "The laptop fails to save files or write data to the storage drive, often accompanied by an error message.",
+          "solution": "Ensure you have sufficient free space on the drive. Run Check Disk (chkdsk). Check file/folder permissions. The drive might be failing; back up important data immediately. For external drives, try a different USB port/cable."
+        },
+        "full disk": {
+          "description": "The storage drive is reported as full or having very little free space, preventing new data from being saved.",
+          "solution": "Use Disk Cleanup utility to remove temporary files and system clutter. Uninstall unnecessary programs. Move large files (videos, photos) to an external drive or cloud storage. Analyze disk usage to see what's taking up space."
+        },
+        "slow access": {
+          "description": "Opening files, launching applications, or booting the OS is significantly slower than usual due to slow storage drive performance.",
+          "solution": "Defragment the hard drive (if it's an HDD, not SSD). Ensure there's at least 15-20% free space. Scan for malware. Check drive health with tools like CrystalDiskInfo. A failing drive or nearly full drive can cause slowness."
+        },
+        "not detected": {
+          "description": "The laptop's BIOS/UEFI or operating system does not recognize the internal storage drive.",
+          "solution": "Check connections if it's an external drive. For internal drives, check in BIOS/UEFI if the drive is recognized. Update storage controller drivers. The drive itself may have failed or its partition table corrupted."
+        },
+        "corrupted": {
+          "description": "The storage drive or its file system has become corrupted, leading to data loss, inability to boot, or system instability.",
+          "solution": "Run chkdsk /f /r from an elevated command prompt. Attempt data recovery using specialized software if important files are inaccessible (use on a different system if boot drive is corrupted). Reformatting will erase data but may fix logical corruption."
+        },
+        "won't format": {
+          "description": "An attempt to format the storage drive fails, often with an error message from the operating system.",
+          "solution": "Try formatting using Disk Management or command prompt (diskpart). Ensure the drive is not write-protected (some USB drives have a switch). The drive might be physically damaged and beyond repair if formatting consistently fails."
+        },
+        "missing files": {
+          "description": "Files or folders have unexpectedly disappeared from the storage drive without user action.",
+          "solution": "Check Recycle Bin. Run a chkdsk scan for file system errors. Scan for malware. If files were on an external drive, check its health. Accidental deletion or drive corruption could be causes. Consider data recovery software if critical."
+        },
+        "boot fail": {
+          "description": "The laptop fails to start the operating system, often displaying errors related to the boot drive or missing OS files.",
+          "solution": "Ensure the correct boot drive is selected in BIOS/UEFI. Attempt startup repair using Windows installation media. Check drive connections. The operating system files might be corrupted, or the drive itself could be failing."
+        },
+        "disk error": {
+          "description": "The operating system reports a generic 'disk error' or similar message, indicating a problem with the storage drive.",
+          "solution": "Run diagnostic tools provided by the drive manufacturer or built into Windows (like chkdsk). Back up your data immediately. This often indicates impending drive failure. Replacing the drive is usually the recommended solution."
+        }
+      },
+      "ram": {
+        "not detected": {
+          "description": "The laptop does not recognize the installed RAM modules, or reports less RAM than is physically present.",
+          "solution": "Ensure RAM modules are properly seated in their slots (if comfortable opening the laptop, otherwise seek professional help). Try one RAM stick at a time to identify a faulty module. Clean RAM contacts and slots carefully."
+        },
+        "system slow": {
+          "description": "The laptop's overall performance is sluggish, applications are slow to respond, often due to insufficient or faulty RAM.",
+          "solution": "Check Task Manager for high RAM usage; close unnecessary applications. Run a memory diagnostic test (Windows Memory Diagnostic). Insufficient RAM for your workload can cause slowness; consider an upgrade if possible."
+        },
+        "crashes": {
+          "description": "The laptop frequently crashes, freezes, or displays Blue Screen of Death (BSOD) errors, potentially due to RAM issues.",
+          "solution": "Run Windows Memory Diagnostic or MemTest86 to check for RAM errors. Ensure RAM is compatible with your laptop model and correctly seated. Overheating can also cause crashes; check system temperatures."
+        },
+        "blue screen": {
+          "description": "The laptop displays a Blue Screen of Death (BSOD) with error messages often pointing to memory management or RAM faults.",
+          "solution": "Blue Screen of Death (BSOD) errors can be caused by faulty RAM. Note the error code and research it. Run Windows Memory Diagnostic. If errors are found, replace the faulty RAM module(s)."
+        },
+        "memory leak": {
+          "description": "A specific application or process consumes an increasing amount of RAM over time without releasing it, leading to system slowdown.",
+          "solution": "Identify the application or process causing the leak using Task Manager or Resource Monitor. Update the problematic software or its drivers. A system reboot temporarily resolves it. Sometimes, malware can cause memory leaks."
+        },
+        "high usage": {
+          "description": "RAM usage is consistently very high, even with few applications open, impacting performance.",
+          "solution": "Identify which applications are consuming RAM via Task Manager. Close unneeded programs. Scan for malware. Increase virtual memory (page file) size, though adding more physical RAM is a better long-term solution if consistently high."
+        },
+        "can't install": {
+          "description": "Software installation fails, sometimes with error messages related to memory or insufficient resources potentially caused by RAM.",
+          "solution": "If software installation fails due to memory errors, test your RAM using Windows Memory Diagnostic. Insufficient free RAM during installation can also cause issues; close other programs. Ensure RAM is properly seated."
+        },
+        "error code": {
+          "description": "The system displays specific error codes during startup or operation that are known to be associated with RAM problems.",
+          "solution": "Specific RAM-related error codes during boot or in system logs often point to faulty modules or incompatibility. Research the exact error code. Running a comprehensive memory test like MemTest86 is recommended."
+        },
+        "freezing": {
+          "description": "The laptop becomes completely unresponsive, with the screen frozen, often due to RAM instability.",
+          "solution": "Faulty RAM is a common cause of system freezes. Test your RAM thoroughly using Windows Memory Diagnostic or MemTest86. Ensure RAM modules are correctly seated and not overheating. Other hardware issues can also cause freezes."
+        },
+        "reboot loop": {
+          "description": "The laptop continuously restarts itself without successfully booting into the operating system, potentially due to RAM issues.",
+          "solution": "Incorrectly seated or faulty RAM can cause reboot loops. Try reseating RAM modules. Test with one stick at a time. If RAM tests pass, other hardware (like storage or motherboard) or software corruption could be the issue."
+        }
+      },
+      "gpu": {
+        "no display": {
+          "description": "The laptop powers on, but there is no image on the built-in screen or any connected external monitor.",
+          "solution": "Connect to an external monitor. If external works, laptop screen or cable might be issue. If neither works, GPU might be faulty. Try restarting. Ensure dedicated GPU is enabled in BIOS/UEFI if applicable. Reseat GPU if modular (rare in laptops)."
+        },
+        "artifacts": {
+          "description": "Visual glitches like distorted shapes, incorrect colors, strange patterns, or flickering pixels appear on the screen.",
+          "solution": "Update or roll back graphics drivers. Monitor GPU temperatures; overheating can cause artifacts. If artifacts persist across multiple applications and driver versions, the GPU hardware may be failing. Reduce GPU overclocks if any."
+        },
+        "driver crash": {
+          "description": "The graphics driver stops responding, often causing the screen to go black momentarily or the system to freeze/crash.",
+          "solution": "Perform a clean installation of the latest graphics drivers from NVIDIA, AMD, or Intel website. Ensure Windows is updated. Overheating or an unstable overclock can also cause driver crashes. Check for conflicts with other software."
+        },
+        "overheating": {
+          "description": "The graphics processing unit (GPU) becomes excessively hot, leading to performance throttling, crashes, or artifacts.",
+          "solution": "Clean laptop vents and fans with compressed air. Ensure good airflow around the laptop. Use a cooling pad. Monitor GPU temperatures using software and consider repasting the GPU heatsink if temperatures are consistently high (professional task)."
+        },
+        "low fps": {
+          "description": "Games or graphics-intensive applications run at a very low frame rate (Frames Per Second), resulting in choppy visuals.",
+          "solution": "Lower in-game graphics settings. Update graphics drivers. Ensure the laptop is using the dedicated GPU instead of integrated graphics (check NVIDIA Control Panel or AMD Radeon Settings). Close background applications. Check for overheating/throttling."
+        },
+        "screen tear": {
+          "description": "A visual artifact where the display shows information from multiple frames in a single screen draw, looking like a horizontal tear.",
+          "solution": "Enable V-Sync or G-Sync/FreeSync in game settings or graphics control panel. Ensure graphics drivers are up to date. Match in-game refresh rate to your display's refresh rate if possible. This is a synchronization issue."
+        },
+        "crashes under load": {
+          "description": "The system or specific applications crash when the GPU is subjected to heavy processing loads (e.g., gaming, video rendering).",
+          "solution": "Monitor GPU temperatures; overheating is a common cause. Update graphics drivers. Test GPU stability with stress testing software. Insufficient power supply (less common in laptops) or a failing GPU could be the issue."
+        },
+        "no graphics": {
+          "description": "The dedicated graphics card is not being detected or utilized by the system; it may be defaulting to integrated graphics.",
+          "solution": "If this means no display output at all, see \"no display\". If it means the dedicated GPU isn't being used or recognized, check Device Manager, ensure drivers are installed, and check power settings or graphics control panel to prefer dedicated GPU."
+        },
+        "artifacting": {
+          "description": "Similar to 'artifacts', displaying incorrect pixels, lines, or patterns on the screen, often indicative of a failing GPU.",
+          "solution": "Update graphics drivers. If recently updated, try rolling back to a previous version. Monitor GPU temperatures to rule out overheating. This often indicates a hardware problem with the GPU itself, potentially requiring repair or replacement."
+        },
+        "black screen": {
+          "description": "The screen goes completely black, either intermittently or permanently, often related to GPU driver or hardware issues.",
+          "solution": "This can be a driver issue; try booting into Safe Mode and reinstalling graphics drivers. Connect to an external monitor. If the black screen occurs randomly or under load, monitor GPU temperatures for overheating. Could be failing GPU."
+        }
+      },
+      "cpu": {
+        "overheating": {
+          "description": "The Central Processing Unit (CPU) temperature becomes excessively high, potentially leading to performance issues or shutdowns.",
+          "solution": "Clean dust from cooling vents and fans using compressed air. Ensure proper airflow by using the laptop on a hard, flat surface. Consider using a laptop cooling pad. Repasting the CPU heatsink may be needed for older laptops (professional job)."
+        },
+        "high usage": {
+          "description": "CPU usage is consistently at or near 100%, even with minimal applications running, causing system slowdown.",
+          "solution": "Identify the process causing high CPU usage in Task Manager. Scan for malware. Close unnecessary background applications. Update drivers and Windows. Persistent high usage with no obvious cause might indicate a software or hardware issue."
+        },
+        "slow performance": {
+          "description": "The laptop is generally slow, applications take a long time to load, and tasks are laggy, potentially due to CPU issues.",
+          "solution": "Check for high CPU/RAM/disk usage in Task Manager. Close unnecessary programs. Scan for malware. Ensure drivers are updated. Overheating can lead to throttling and slow performance; check temperatures."
+        },
+        "fan always on": {
+          "description": "The laptop's cooling fan runs constantly at high speed, even when the system is idle or under light load.",
+          "solution": "Clean vents and fans of dust. Check for background processes causing high CPU load, leading to increased heat and fan activity. Adjust power plan settings. A BIOS update might address fan control issues."
+        },
+        "thermal shutdown": {
+          "description": "The laptop automatically powers off to prevent damage from the CPU reaching critically high temperatures.",
+          "solution": "This is a safety mechanism to prevent CPU damage from overheating. Thoroughly clean cooling system (vents, fans). Ensure good ventilation. Repasting the CPU heatsink might be necessary. Address the root cause of overheating."
+        },
+        "throttling": {
+          "description": "The CPU reduces its clock speed (and thus performance) to prevent overheating when under load.",
+          "solution": "CPU throttling occurs when it gets too hot, reducing performance to cool down. Improve cooling by cleaning vents, using a cooling pad, and ensuring good airflow. Monitor temperatures and CPU clock speeds under load."
+        },
+        "freezes": {
+          "description": "The laptop becomes completely unresponsive, with the screen frozen and no input accepted, often due to CPU instability.",
+          "solution": "Overheating, driver issues, or a failing CPU can cause freezes. Monitor CPU temperatures. Test system stability with CPU stress tests. Ensure all drivers, especially chipset and CPU-related, are updated. Run hardware diagnostics."
+        },
+        "not detected": {
+          "description": "The system BIOS/UEFI does not recognize the CPU, or the operating system reports issues detecting the processor.",
+          "solution": "This is a very rare and serious issue for laptops as CPU is soldered. If BIOS/UEFI doesn't recognize the CPU, it's likely a catastrophic motherboard or CPU failure requiring professional motherboard replacement."
+        },
+        "BSOD": {
+          "description": "The laptop frequently displays a Blue Screen of Death (BSOD) with error codes that may point to CPU-related faults.",
+          "solution": "CPU issues can cause Blue Screens of Death. Note the error code. Overheating, driver conflicts, or a faulty CPU can be culprits. Run CPU stress tests and monitor temperatures. Update BIOS and chipset drivers."
+        },
+        "reboot loop": {
+          "description": "The laptop gets stuck in a cycle of restarting itself before fully booting into the operating system, possibly due to CPU issues.",
+          "solution": "Overheating CPU, incorrect BIOS settings, driver issues, or a failing CPU/motherboard can cause reboot loops. Check temperatures. Reset BIOS to defaults. Test RAM. If hardware, it often requires professional diagnosis."
+        }
+      }
+    }
+  },
+  {
+    "device": "desktop",
+    "components": {
+      "monitor": {
+        "no display": {
+          "description": "The monitor powers on but shows no image from the connected PC, often displaying 'No Signal' or a blank screen.",
+          "solution": "Check video cable connections (HDMI, DisplayPort, etc.) to both PC and monitor. Ensure monitor is powered on and correct input source is selected. Test with a different cable or another PC to isolate the issue."
+        },
+        "flickering": {
+          "description": "The image on the monitor rapidly flashes, pulses, or shows horizontal/vertical instability.",
+          "solution": "Verify the display cable is securely connected and undamaged. Update your graphics card drivers. Adjust the monitor's refresh rate in display settings. Test with an alternative cable or monitor if possible."
+        },
+        "dead pixels": {
+          "description": "One or more tiny dots on the screen remain permanently black or off, regardless of what is being displayed.",
+          "solution": "Dead pixels (always black) are usually a manufacturing defect requiring monitor replacement. Stuck pixels (fixed color) might sometimes be fixed by gently massaging the area or using pixel-fixing software or videos."
+        },
+        "no backlight": {
+          "description": "The monitor screen is very dark, but a faint image might be visible when a bright light is shone upon it.",
+          "solution": "If an image is faintly visible with an external light source, the backlight has failed. This is an internal hardware issue, typically requiring professional repair or monitor replacement as it's often not cost-effective."
+        },
+        "blurry image": {
+          "description": "Text and images on the screen appear out of focus, fuzzy, or lack sharpness.",
+          "solution": "Ensure the monitor is set to its native resolution in your PC's display settings. Check video cable connections. Adjust sharpness settings on the monitor itself. Update graphics card drivers."
+        },
+        "color distortion": {
+          "description": "Colors on the monitor appear incorrect, washed out, oversaturated, or have an unusual tint (e.g., too blue, too yellow).",
+          "solution": "Check video cable for secure connection. Reset monitor settings to factory defaults. Calibrate display colors through your operating system or graphics card control panel. Test with a different cable or PC."
+        },
+        "cracked screen": {
+          "description": "The physical glass or display panel of the monitor is broken, showing visible cracks or damage.",
+          "solution": "A cracked screen is physical damage. Depending on the monitor's value, replacement of the panel or the entire unit is necessary. Repairing high-end monitors might be viable; for others, replacement is common."
+        },
+        "lines on screen": {
+          "description": "Persistent horizontal or vertical lines of various colors or patterns appear on the display.",
+          "solution": "This could be a loose or damaged display cable, a graphics card issue, or a failing monitor. Update graphics drivers. Test with a different cable and connect the monitor to another PC if possible."
+        },
+        "low brightness": {
+          "description": "The screen's overall brightness is significantly lower than normal, even with brightness settings at maximum.",
+          "solution": "Adjust the brightness controls directly on the monitor. Check display settings in your operating system. Disable any power-saving modes that might be dimming the screen. An aging backlight can also cause gradual dimming."
+        },
+        "no signal": {
+          "description": "The monitor displays a 'No Signal' message or similar, indicating it's not receiving a video feed from the PC.",
+          "solution": "Verify cable connections are secure and the monitor is on the correct input source. Restart your PC and monitor. Test with a different cable, port, or try the monitor on another PC. Ensure graphics card is properly seated."
+        }
+      },
+      "keyboard": {
+        "unresponsive keys": {
+          "description": "One or more keys do not register when pressed, or require excessive force to activate.",
+          "solution": "Clean the keyboard with compressed air, especially under unresponsive keys. Restart your PC. Test keys in different applications. Check for keyboard driver issues in Device Manager and reinstall if necessary."
+        },
+        "wrong characters": {
+          "description": "Pressing a key inputs a different character, symbol, or performs an unintended action.",
+          "solution": "Verify the correct keyboard language and layout are selected in your operating system settings. Ensure no special function keys (like Fn or NumLock on compact layouts) are inadvertently active. Scan for malware."
+        },
+        "sticky keys": {
+          "description": "Keys feel gummy, do not return to their original position smoothly after being pressed, or get stuck down.",
+          "solution": "Disconnect the keyboard. Use compressed air to dislodge debris. For spills, carefully clean around and under keycaps with a cotton swab lightly dampened with isopropyl alcohol. Allow to dry completely before reconnecting."
+        },
+        "repeated keystrokes": {
+          "description": "A single key press results in multiple instances of the character being typed.",
+          "solution": "Adjust keyboard repeat rate and delay settings in your operating system's control panel. Clean the affected keys thoroughly. Test on another PC to rule out a hardware fault with the key switch."
+        },
+        "no backlight": {
+          "description": "If the keyboard is designed with backlighting, the illumination does not turn on.",
+          "solution": "If your keyboard has backlighting, use the dedicated key (often an Fn key combination) or software utility to enable it. Check the keyboard's USB connection. Update any specific keyboard control software."
+        },
+        "missing keycaps": {
+          "description": "One or more of the plastic covers (keycaps) for the keys are missing from the keyboard.",
+          "solution": "Identify your keyboard model to find compatible replacement keycaps online from specialty stores or the manufacturer. Keycaps usually snap back on if the underlying switch mechanism is intact."
+        },
+        "ghost typing": {
+          "description": "The keyboard inputs characters or performs actions randomly, as if keys are being pressed without user interaction.",
+          "solution": "Clean the keyboard meticulously for any debris or stuck keys. Scan your PC for malware. Outdated or corrupted keyboard drivers, or a failing internal controller, can also cause this. Test on another PC."
+        },
+        "key chatter": {
+          "description": "A single key press is registered multiple times in quick succession, often an issue with mechanical keyboard switches.",
+          "solution": "This is common in mechanical keyboards when a switch registers multiple inputs per press due to wear. Try cleaning the switch internally if possible. Often requires switch replacement or a new keyboard."
+        },
+        "numlock stuck": {
+          "description": "The NumLock key is permanently active or inactive, and pressing it does not change its state.",
+          "solution": "Press the NumLock key again; it's a toggle. Restart your PC. Check BIOS/UEFI settings for NumLock state at boot. If the issue persists, test with an external keyboard to isolate the problem."
+        },
+        "layout wrong": {
+          "description": "The physical layout of keys (e.g., QWERTY) does not match the characters produced when typing (e.g., inputs QWERTZ).",
+          "solution": "Ensure the correct keyboard layout (e.g., QWERTY US, UK, Dvorak) is selected in your operating system's language and region settings. Incorrect settings will remap keys to different characters."
+        }
+      },
+      "mouse": {
+        "no cursor movement": {
+          "description": "The mouse pointer on the screen does not move when the physical mouse is moved.",
+          "solution": "Check the mouse's USB connection; try a different USB port. Restart your PC. For wireless mice, ensure batteries are charged/replaced and the receiver is properly connected and paired."
+        },
+        "erratic movement": {
+          "description": "The mouse cursor jumps around, stutters, or moves unpredictably on the screen.",
+          "solution": "Clean the mouse's optical sensor with compressed air or a soft, dry cloth. Use a clean, suitable mousepad. For wireless mice, check for interference or low battery. Update mouse drivers."
+        },
+        "double click": {
+          "description": "A single physical click of a mouse button registers as two clicks in the operating system.",
+          "solution": "This is often due to a worn-out mechanical switch in the mouse button. Adjusting double-click speed in OS settings might offer temporary relief, but mouse replacement is usually the permanent fix."
+        },
+        "button stuck": {
+          "description": "A mouse button remains physically depressed after being clicked or feels difficult to press.",
+          "solution": "Disconnect the mouse. Use compressed air to clean around the stuck button. If caused by a spill, carefully clean with isopropyl alcohol on a swab. The button mechanism might be damaged."
+        },
+        "scroll not working": {
+          "description": "The scroll wheel on the mouse does not function, or scrolls erratically/incorrectly.",
+          "solution": "Clean the scroll wheel mechanism thoroughly with compressed air. Update mouse drivers. Check mouse settings in the OS or any dedicated mouse software. Test in different applications to isolate the issue."
+        },
+        "slow tracking": {
+          "description": "The mouse cursor moves slower on the screen than the physical mouse movement, feeling sluggish.",
+          "solution": "Adjust the cursor speed or pointer sensitivity in your operating system's mouse settings. Clean the mouse sensor. Ensure the mousepad surface is optimal for tracking. High system CPU usage can also cause lag."
+        },
+        "optical sensor dirty": {
+          "description": "The optical sensor on the underside of the mouse is obscured by dust, hair, or debris, affecting tracking.",
+          "solution": "Gently clean the optical sensor lens located on the underside of the mouse. Use a dry cotton swab or a puff of compressed air. Avoid using liquids directly on the sensor."
+        },
+        "wireless lag": {
+          "description": "There is a noticeable delay between moving a wireless mouse and the cursor responding on screen.",
+          "solution": "Ensure the wireless mouse has fresh batteries or is fully charged. Position the wireless receiver closer to the mouse, ensuring a clear line of sight. Minimize 2.4GHz interference from other devices."
+        },
+        "dead battery": {
+          "description": "A wireless mouse is unresponsive because its batteries are depleted or its rechargeable battery has no charge.",
+          "solution": "For wireless mice, replace the disposable batteries. If it's a rechargeable model, connect it to its charger or docking station until fully charged. Ensure charging contacts are clean."
+        },
+        "disconnected": {
+          "description": "The mouse is not detected by the PC, or frequently loses connection.",
+          "solution": "For wired mice, check the USB cable connection at both ends. For wireless mice, verify the receiver is securely plugged in, batteries are functional, the mouse is powered on, and re-pair if necessary."
+        }
+      },
+      "cpu": {
+        "overheating": {
+          "description": "The CPU temperature exceeds safe operating limits, potentially causing performance throttling or system instability.",
+          "solution": "Ensure the CPU cooler is properly mounted with fresh thermal paste. Clean dust from the heatsink and fan. Improve case airflow by ensuring vents are clear and adding case fans if needed. Check CPU fan operation."
+        },
+        "high usage": {
+          "description": "The CPU is consistently running at or near 100% utilization, even when the system is idle or performing light tasks.",
+          "solution": "Identify resource-intensive processes using Task Manager. Scan for malware. Close unnecessary background applications. Outdated drivers or operating system issues can also contribute to unexplained high CPU usage."
+        },
+        "thermal throttling": {
+          "description": "The CPU automatically reduces its clock speed and performance to prevent damage from overheating.",
+          "solution": "This occurs when the CPU slows down to prevent overheating. Improve cooling: clean heatsink/fan, reapply thermal paste, ensure good case airflow. Monitor temperatures using software."
+        },
+        "fan always on": {
+          "description": "The CPU cooling fan runs constantly at high speed, regardless of CPU load or temperature.",
+          "solution": "Clean the CPU heatsink and fan. Check for high idle CPU usage in Task Manager, which would generate more heat. Adjust fan curves in BIOS/UEFI or via fan control software for quieter operation at lower temps."
+        },
+        "frequent crashes": {
+          "description": "The system experiences unexpected shutdowns, reboots, or application crashes, potentially related to CPU instability.",
+          "solution": "Monitor CPU temperatures for overheating. Stress test the CPU for stability (e.g., using Prime95). Ensure the CPU cooler is adequate and correctly installed. BIOS, driver issues, or PSU problems can also cause crashes."
+        },
+        "blue screen": {
+          "description": "The PC displays a Blue Screen of Death (BSOD) with error messages that might implicate the CPU (e.g., WHEA_UNCORRECTABLE_ERROR).",
+          "solution": "Note the Blue Screen of Death (BSOD) error code for clues. CPU issues like overheating, unstable overclocks, or failing hardware can trigger BSODs. Test CPU stability and temperatures. Ensure drivers are stable."
+        },
+        "slow boot": {
+          "description": "The PC takes an unusually long time to start up and load the operating system, potentially due to CPU bottlenecks.",
+          "solution": "While multiple factors influence boot time, a CPU struggling with startup tasks can contribute. Check CPU usage during boot if possible. Ensure the primary storage drive (SSD/HDD) is healthy and not the bottleneck."
+        },
+        "freezes": {
+          "description": "The entire system becomes unresponsive, with the screen frozen and no input accepted, potentially due to CPU issues.",
+          "solution": "Monitor CPU temperatures to rule out overheating. Stress test the CPU. Ensure compatibility with motherboard and RAM. Check for Power Supply Unit (PSU) issues not providing stable power. Update BIOS and relevant drivers."
+        },
+        "not detected": {
+          "description": "The motherboard BIOS/UEFI does not recognize the installed CPU, or the system fails to POST with a CPU error.",
+          "solution": "Ensure the CPU is correctly seated in its socket (check for bent pins on CPU or in socket for LGA). Verify motherboard compatibility and that the BIOS version supports the CPU. Could be a dead CPU or motherboard socket issue."
+        },
+        "reboot loop": {
+          "description": "The PC continuously restarts itself without reaching the operating system, possibly due to critical CPU or related hardware failure.",
+          "solution": "Can be caused by CPU overheating, unstable overclock, PSU providing unstable power, or a motherboard fault. Reset BIOS/UEFI to default settings. Check CPU cooler mounting and temperatures carefully."
+        }
+      },
+      "ram": {
+        "not recognized": {
+          "description": "The system BIOS/UEFI or operating system does not detect all installed RAM modules or reports an incorrect total capacity.",
+          "solution": "Ensure RAM modules are correctly and firmly seated in the motherboard slots. Test modules individually in different slots. Consult the motherboard manual for RAM compatibility and correct slot population for your configuration."
+        },
+        "frequent crashes": {
+          "description": "The PC experiences frequent application crashes, system freezes, or Blue Screens of Death, often attributable to faulty RAM.",
+          "solution": "Run memory diagnostic tools like Windows Memory Diagnostic or MemTest86 to check for RAM errors. Ensure RAM is compatible with your motherboard and CPU. Try reseating the RAM modules carefully."
+        },
+        "memory leak": {
+          "description": "A specific application or process progressively consumes more RAM over time without releasing it, eventually slowing down the system.",
+          "solution": "Identify the application or process consuming increasing amounts of RAM using Task Manager or Resource Monitor. Update or reinstall the problematic software. Scan for malware. Ensure OS and drivers are current."
+        },
+        "slow performance": {
+          "description": "The overall system performance is sluggish, programs are slow to load, and multitasking is difficult due to RAM limitations or faults.",
+          "solution": "Check RAM usage in Task Manager. If it's consistently maxed out, your system is likely using the slower page file on storage. Close unnecessary programs or consider upgrading your RAM capacity."
+        },
+        "bsod memory error": {
+          "description": "The PC displays a Blue Screen of Death with error messages specifically mentioning memory (e.g., MEMORY_MANAGEMENT, PAGE_FAULT_IN_NONPAGED_AREA).",
+          "solution": "Note the specific Blue Screen of Death error code (e.g., MEMORY_MANAGEMENT). Run comprehensive memory diagnostic tools like Windows Memory Diagnostic or MemTest86. Faulty RAM modules usually require replacement."
+        },
+        "module failure": {
+          "description": "One or more RAM modules are faulty, causing instability, errors, or preventing the system from booting correctly.",
+          "solution": "If memory diagnostics detect errors in a specific RAM module, or the system is unstable only when that module is installed, it has likely failed and needs to be replaced. Test sticks individually to confirm."
+        },
+        "mismatched speed": {
+          "description": "RAM modules with different speed ratings are installed, potentially leading to the system running at the slowest module's speed or causing instability.",
+          "solution": "RAM will operate at the speed of the slowest installed module or the maximum speed supported by the motherboard/CPU. For optimal stability and performance, use a kit of matching RAM modules. Check BIOS for speed settings."
+        },
+        "capacity wrong": {
+          "description": "The operating system reports less RAM than is physically installed, or only a portion of the RAM is usable.",
+          "solution": "Ensure all RAM modules are correctly detected in the BIOS/UEFI and operating system. A 32-bit OS will limit usable RAM to around 3.5GB. Check if some RAM is allocated to integrated graphics in BIOS."
+        },
+        "stability issues": {
+          "description": "The system is generally unstable, with random freezes or crashes, potentially due to RAM incompatibility, incorrect timings, or voltage issues.",
+          "solution": "Can be caused by faulty RAM, incorrect BIOS settings (voltage, timings, XMP profiles), or incompatibility. Test with memory diagnostics. Reset BIOS to defaults or try enabling/disabling XMP."
+        },
+        "faulty slot": {
+          "description": "A specific RAM slot on the motherboard is damaged or malfunctioning, preventing any RAM module installed in it from working correctly.",
+          "solution": "If known good RAM modules work in some motherboard slots but not others, the motherboard slot itself may be damaged. This often requires professional motherboard repair or replacement."
+        }
+      },
+      "hard drive": {
+        "not detected": {
+          "description": "The hard drive is not recognized by the system BIOS/UEFI or the operating system, preventing access to its data.",
+          "solution": "Check SATA data and power cable connections to the hard drive and motherboard. Ensure the drive is enabled and recognized in the BIOS/UEFI. Test with different cables or SATA ports. The drive may have failed."
+        },
+        "clicking noise": {
+          "description": "The hard drive emits repetitive clicking, grinding, or whirring sounds, often indicating a mechanical failure.",
+          "solution": "This is often the 'click of death,' indicating a severe mechanical failure within the drive. Back up any accessible data immediately. The drive will almost certainly need to be replaced soon."
+        },
+        "slow read": {
+          "description": "Accessing files or loading programs from the hard drive is significantly slower than usual.",
+          "solution": "Run a disk health check utility (e.g., CrystalDiskInfo, manufacturer's tool). Defragment the drive if it's an HDD. Scan for malware. The drive could be failing, nearly full, or heavily fragmented."
+        },
+        "slow write": {
+          "description": "Saving files or installing programs to the hard drive takes an unusually long time.",
+          "solution": "Similar to slow read issues. Check drive health, free space, and fragmentation (for HDDs). Ensure SATA drivers are up-to-date. Heavy background tasks or malware can also impact write speeds."
+        },
+        "corrupted files": {
+          "description": "Files stored on the hard drive become unreadable, damaged, or cause applications to crash when accessed.",
+          "solution": "Run the `chkdsk /f /r` command in an elevated command prompt to check for and attempt to repair file system errors. This can be a sign of failing drive sectors. Regular backups are crucial."
+        },
+        "bad sectors": {
+          "description": "Portions of the hard drive's magnetic surface become damaged and can no longer reliably store data.",
+          "solution": "These are portions of the drive that are no longer reliable for data storage. The `chkdsk` command can identify and mark them. While a few can be normal over time, an increasing number indicates drive failure."
+        },
+        "disk full": {
+          "description": "The hard drive has no or very little free space remaining, preventing new data from being saved.",
+          "solution": "Delete unnecessary files and uninstall unused programs. Move large media files to an external drive or cloud storage. Use Disk Cleanup or a storage analyzer tool to identify what's consuming space."
+        },
+        "unusual noise": {
+          "description": "The hard drive produces sounds other than normal operational clicks, such as loud whirring, grinding, or scraping.",
+          "solution": "Whirring, grinding, or excessive clicking sounds beyond normal operational noises can indicate mechanical problems. Back up your data immediately and prepare for drive replacement as failure may be imminent."
+        },
+        "mounting error": {
+          "description": "The operating system fails to correctly access or 'mount' the hard drive's file system, making data inaccessible.",
+          "solution": "The operating system may fail to recognize or access the drive, often due to a corrupted file system, connection issues, or drive failure. Attempting a `chkdsk` might help. Data recovery may be needed."
+        },
+        "SMART warning": {
+          "description": "The S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology) system predicts an impending hard drive failure.",
+          "solution": "Self-Monitoring, Analysis, and Reporting Technology (SMART) warnings predict potential drive failure. Heed these warnings: back up all important data immediately and replace the hard drive as soon as possible."
+        }
+      },
+      "graphics card": {
+        "no display": {
+          "description": "The PC powers on, but there is no image output to any connected monitor from the graphics card.",
+          "solution": "Ensure the graphics card is properly seated in its PCIe slot and any required PCIe power connectors (6/8-pin) are securely plugged in from the PSU. Check monitor cable connection and selected input source."
+        },
+        "artifacts": {
+          "description": "Visual distortions such as strange colors, lines, checkerboard patterns, or flickering pixels appear on the screen.",
+          "solution": "Visual glitches like odd colors, lines, or patterns often indicate GPU overheating, an unstable overclock, driver issues, or failing GPU hardware. Monitor temperatures and update/reinstall drivers using DDU."
+        },
+        "driver crash": {
+          "description": "The graphics card driver stops responding, often resulting in a black screen, system freeze, or an error message.",
+          "solution": "Perform a clean installation of the latest graphics drivers from the manufacturer's website (NVIDIA/AMD/Intel), possibly using Display Driver Uninstaller (DDU) first. Check for overheating or software conflicts."
+        },
+        "overheating": {
+          "description": "The graphics card temperature becomes excessively high, leading to performance throttling, artifacts, or system shutdowns.",
+          "solution": "Clean dust from the GPU heatsink and fans. Ensure good case airflow with adequate intake and exhaust fans. Monitor GPU temperatures under load. Consider replacing thermal paste if the card is old."
+        },
+        "low fps": {
+          "description": "Games or graphics-intensive applications run at a significantly lower frame rate (Frames Per Second) than expected.",
+          "solution": "Update graphics drivers. Lower in-game graphics settings. Ensure the monitor is plugged into the graphics card, not the motherboard's video output. Close resource-intensive background applications. Check for GPU overheating/throttling."
+        },
+        "screen tear": {
+          "description": "A visual artifact where the image on the screen appears horizontally split or 'torn' during motion.",
+          "solution": "Enable V-Sync, G-Sync (NVIDIA), or FreeSync (AMD) in game settings or through the graphics card's control panel. This synchronizes the GPU's frame rate output with the monitor's refresh rate."
+        },
+        "black screen": {
+          "description": "The monitor suddenly goes black during use, but the PC might still be running (e.g., sound continues).",
+          "solution": "Can be due to driver issues (try booting into Safe Mode), GPU overheating, an unstable overclock, insufficient PSU wattage, or a failing graphics card. Ensure stable power and monitor temperatures."
+        },
+        "no install": {
+          "description": "Attempts to install or update graphics card drivers fail, often with an error message.",
+          "solution": "If graphics drivers fail to install, ensure you have downloaded the correct driver version for your specific GPU model and operating system. Use DDU to remove old drivers before attempting a fresh install."
+        },
+        "flickering": {
+          "description": "The screen image flickers rapidly or shows intermittent flashes, similar to 'artifacts' but more about brightness/image stability.",
+          "solution": "Check the monitor cable connection for looseness or damage. Driver issues are a common cause; update or roll back drivers. GPU overheating or a failing graphics card can also manifest as flickering."
+        },
+        "no signal": {
+          "description": "The monitor displays a 'No Signal' message when connected to the graphics card, indicating no video input is received.",
+          "solution": "Similar to 'no display.' Verify GPU seating, PCIe power connections, and monitor cable integrity. Test the monitor on another source. Try a different output port (HDMI, DisplayPort) on the graphics card."
+        }
+      },
+      "motherboard": {
+        "no power": {
+          "description": "The PC shows no signs of life when the power button is pressed; no fans spin, no lights turn on.",
+          "solution": "Check PSU switch and wall power cable. Ensure front panel power button cable is correctly connected to motherboard headers. Test the PSU if possible. A dead motherboard is a common cause."
+        },
+        "beeping codes": {
+          "description": "Upon startup, the PC emits a sequence of beeps from the motherboard speaker, indicating specific hardware errors.",
+          "solution": "Note the sequence of beeps (e.g., short, long) and consult your motherboard manual or manufacturer's website. These codes help diagnose hardware issues, often related to RAM, GPU, or CPU problems."
+        },
+        "usb failure": {
+          "description": "USB ports on the motherboard do not function, or connected USB devices are not recognized or work erratically.",
+          "solution": "Test multiple USB ports with different devices. Update chipset drivers from the motherboard manufacturer's website. Check for physical damage to the USB ports. The motherboard's USB controller might be failing."
+        },
+        "bios corrupt": {
+          "description": "The motherboard's BIOS/UEFI firmware has become damaged, preventing the system from booting or functioning correctly.",
+          "solution": "A corrupt BIOS can prevent booting. Some motherboards feature dual BIOS or BIOS flashback capabilities for recovery. Clearing the CMOS (resetting BIOS to defaults) might help. May require professional repair."
+        },
+        "post error": {
+          "description": "The PC fails the Power-On Self-Test (POST) during startup, often displaying an error message or code on screen.",
+          "solution": "Power-On Self-Test errors indicate hardware problems detected during startup. On-screen messages or beep codes will help diagnose the issue. Check seating of RAM, GPU, and CPU. Consult manual."
+        },
+        "no boot": {
+          "description": "The PC powers on but fails to load the operating system, getting stuck before or during the OS startup sequence.",
+          "solution": "If the system powers on but the OS doesn't load, check the boot drive priority in BIOS/UEFI. Test RAM and GPU. Operating system files might be corrupted, or the boot drive itself could be failing."
+        },
+        "sata ports fail": {
+          "description": "One or more SATA ports on the motherboard are not detecting connected storage devices (HDD/SSD) or optical drives.",
+          "solution": "Test storage devices on different SATA ports using different known-good SATA cables. Update chipset drivers. If multiple SATA ports are non-functional, the motherboard's SATA controller may be faulty."
+        },
+        "memory not detected": {
+          "description": "The motherboard does not recognize some or all of the installed RAM modules, leading to boot failures or incorrect RAM capacity reports.",
+          "solution": "Ensure RAM modules are correctly seated and compatible with the motherboard. Test modules individually. Refer to POST error messages or beep codes. Could be faulty RAM slots or incorrect BIOS settings."
+        },
+        "pci-e not detected": {
+          "description": "Devices installed in PCIe slots (e.g., graphics cards, expansion cards) are not recognized by the system.",
+          "solution": "Ensure the graphics card or other PCIe device is properly seated in the slot and has any necessary auxiliary power connected. Update BIOS and chipset drivers. Test the card in another PCIe slot or PC."
+        },
+        "voltage issues": {
+          "description": "The motherboard is supplying incorrect or unstable voltages to components, leading to instability or hardware damage.",
+          "solution": "Indicated by system instability, random crashes, or warnings in BIOS/UEFI. Check PSU health. Monitor voltage readings in BIOS or with hardware monitoring software. Could be failing PSU or motherboard voltage regulation components."
+        }
+      },
+      "fan": {
+        "no spin": {
+          "description": "A case fan or component fan (CPU/GPU) is not rotating when the PC is powered on.",
+          "solution": "Check the fan's connection to the motherboard fan header or PSU. Ensure the fan blades are not obstructed by cables or debris. The fan motor may have failed and might need replacement."
+        },
+        "always on": {
+          "description": "A fan runs at full speed constantly, regardless of system temperature or load.",
+          "solution": "This might be normal if the system is running hot or if fan curve settings are aggressive. Clean dust from system components and heatsinks. Adjust fan curves in BIOS/UEFI or via fan control software."
+        },
+        "loud noise": {
+          "description": "The fan produces excessive noise, such as grinding, whining, or a high-pitched hum.",
+          "solution": "Fan bearing wear is a common cause of loud grinding or whining noises. Clean dust from fan blades and housing. Ensure the fan is securely mounted. Persistent noise usually means the fan needs replacement."
+        },
+        "rattling": {
+          "description": "The fan makes a rattling or vibrating sound, often due to loose mounting or cable interference.",
+          "solution": "Check for loose mounting screws or nearby cables that might be hitting the fan blades. The fan bearing might be failing. Ensure the fan is properly balanced and securely attached."
+        },
+        "slow spin": {
+          "description": "The fan rotates slower than it should, providing insufficient cooling, or struggles to start.",
+          "solution": "The fan may be heavily clogged with dust, restricting movement, or its motor could be failing. Check fan control settings in BIOS/software. Ensure it's receiving adequate voltage from the fan header."
+        },
+        "uneven speed": {
+          "description": "The fan's rotational speed fluctuates erratically rather than maintaining a steady or appropriately adjusted speed.",
+          "solution": "Could be a faulty fan motor or erratic signals from the fan controller on the motherboard or a dedicated fan controller unit. Try connecting the fan to a different header or test with fan control software."
+        },
+        "dust clog": {
+          "description": "The fan blades, housing, or associated heatsink are heavily coated in dust, impeding airflow and cooling.",
+          "solution": "Thoroughly clean fan blades, housing, and any associated heatsinks using compressed air. Regular cleaning prevents overheating, reduces noise, and improves the lifespan and efficiency of fans."
+        },
+        "pwm failure": {
+          "description": "A PWM (4-pin) fan does not respond to speed control signals from the motherboard, running at full speed or not at all.",
+          "solution": "If a 4-pin PWM fan isn't responding to speed control signals (runs at full or no speed), the PWM functionality on the fan or motherboard header might be faulty. Test on another PWM-capable header."
+        },
+        "incorrect rpm": {
+          "description": "Software monitoring tools report an RPM (revolutions per minute) for the fan that is clearly wrong or zero when it's spinning.",
+          "solution": "Software monitoring RPM might report incorrect values if the fan's sensor is faulty or incompatible. Check RPM readings in BIOS/UEFI if possible. The fan might not be spinning at the expected speed."
+        },
+        "stops under load": {
+          "description": "The fan operates normally at idle but slows down or stops completely when the system is under heavy load and needs more cooling.",
+          "solution": "This could indicate insufficient power being supplied from the fan header when higher RPMs are needed, or the fan motor is failing under stress. Overheating protection on some advanced fans could also be a factor."
+        }
+      },
+      "usb port": {
+        "no power": {
+          "description": "USB devices connected to a specific port do not receive power and are not recognized.",
+          "solution": "Test other USB devices in the same port. Test the problematic device in a different USB port. Check internal cable connections for front panel USB ports. The port may be physically damaged or disabled in BIOS/UEFI."
+        },
+        "device not detected": {
+          "description": "A USB device plugged into a port is not recognized by the operating system, or an 'Unknown Device' error appears.",
+          "solution": "Try a different USB port and a different USB cable. Reinstall USB controller drivers via Device Manager. Ensure the USB device itself is functional by testing it on another PC. The port may be faulty."
+        },
+        "loose connection": {
+          "description": "A USB cable or device fits loosely into the port, potentially leading to intermittent connection issues.",
+          "solution": "Physical wear on the USB port or the cable's connector can cause a loose fit. Try a different, high-quality USB cable. If the port itself is loose on the motherboard, it may require repair."
+        },
+        "slow transfer": {
+          "description": "Data transfer speeds to or from a USB device are significantly slower than expected for the device and port type (e.g., USB 2.0 speeds on a USB 3.0 port).",
+          "solution": "Ensure you're using a USB 3.0+ port (often blue) for high-speed devices and compatible cables. Update chipset and USB drivers. Background system tasks or a slow target/source device can also limit transfer speeds."
+        },
+        "boot fail": {
+          "description": "The PC fails to boot or gets stuck during startup when a specific USB device is connected to a port.",
+          "solution": "If the PC fails to boot with a specific USB device plugged in, try disconnecting it. Check the BIOS/UEFI boot order. A faulty USB device or port can sometimes interfere with the Power-On Self-Test (POST)."
+        },
+        "intermittent": {
+          "description": "A connected USB device randomly disconnects and reconnects, or works unreliably.",
+          "solution": "Often caused by a loose connection in the USB port or cable. Driver issues or Windows power management settings (disabling USB root hubs to save power) can also cause intermittent connectivity. Test the device on another PC."
+        },
+        "short circuit": {
+          "description": "A USB port has an electrical short, potentially causing the PC to shut down or other USB devices to malfunction.",
+          "solution": "A short circuit in a USB port usually causes the PC to shut down or connected USB devices to malfunction. Inspect the port for bent pins or foreign metallic objects. Do not use a port suspected of shorting."
+        },
+        "broken pin": {
+          "description": "One or more of the contact pins inside the USB port are visibly bent, broken, or pushed in.",
+          "solution": "Visibly damaged or bent pins inside the USB port mean the port is unusable. Attempting to use it may damage USB devices or the motherboard. The port will require physical replacement."
+        },
+        "data error": {
+          "description": "Files become corrupted during transfer to or from a USB device, or read/write operations fail with data errors.",
+          "solution": "If files become corrupted during transfer via USB, it could be due to a faulty USB storage device, a bad cable, a problematic USB port, or driver issues. Test each component systematically."
+        },
+        "unrecognized": {
+          "description": "The operating system displays a 'USB Device Not Recognized' error when a device is plugged in.",
+          "solution": "The 'USB Device Not Recognized' error can be fixed by trying a different port/cable, reinstalling USB drivers/hubs in Device Manager (scan for hardware changes), or restarting the PC. The device or port may be faulty."
+        }
+      },
+      "hdmi port": {
+        "no signal": {
+          "description": "The display connected via HDMI shows a 'No Signal' message or a blank screen, indicating no video input.",
+          "solution": "Ensure the HDMI cable is securely connected to both the PC (graphics card port) and the display. Verify the correct input source is selected on the display. Test with a different HDMI cable or display."
+        },
+        "flickering": {
+          "description": "The image on the HDMI-connected display flickers, flashes, or shows intermittent signal loss.",
+          "solution": "Often caused by a loose cable connection or a faulty HDMI cable. Graphics card driver issues, incorrect refresh rate settings, or electrical interference can also cause flickering. Try a high-quality, shorter cable."
+        },
+        "loose cable": {
+          "description": "The HDMI cable fits loosely into the port on the PC or display, potentially causing signal issues.",
+          "solution": "The HDMI port on the PC/display or the cable connector itself may be worn, leading to a loose fit. Try a new, good-quality HDMI cable. If the port is loose, it may require repair."
+        },
+        "no audio": {
+          "description": "Video is transmitted over HDMI, but there is no sound output to the connected display or audio device.",
+          "solution": "Ensure HDMI audio output is selected as the default playback device in your operating system's sound settings. Update graphics and audio drivers. Confirm your HDMI cable and display support audio transmission."
+        },
+        "resolution wrong": {
+          "description": "The display resolution is incorrect, lower than supported, or cannot be set to the display's native resolution over HDMI.",
+          "solution": "Set the correct display resolution in your operating system's display settings. Update graphics drivers. Ensure your monitor natively supports the chosen resolution over its HDMI input. Older HDMI versions have resolution/refresh rate limits."
+        },
+        "intermittent": {
+          "description": "The HDMI signal randomly cuts out and then reconnects, or the display occasionally goes black.",
+          "solution": "Usually due to a loose connection, a faulty HDMI cable, or a failing HDMI port. Graphics card driver issues or GPU overheating can also cause intermittent signal loss. Test components systematically."
+        },
+        "port damage": {
+          "description": "The HDMI port on the PC or graphics card is physically damaged, with bent pins or a broken connector housing.",
+          "solution": "Physical damage to the HDMI port's pins or housing (e.g., bent, broken) requires careful handling. Avoid using a damaged port. It will likely need replacement, often a job for a professional technician."
+        },
+        "handshake fail": {
+          "description": "An HDCP (High-bandwidth Digital Content Protection) error occurs, preventing content playback, or the display shows an error related to signal authentication.",
+          "solution": "HDCP (High-bandwidth Digital Content Protection) authentication issues can cause this. Try a different HDMI cable. Power cycle all connected devices (PC, display). Update graphics drivers and display firmware if available."
+        },
+        "color shift": {
+          "description": "Colors displayed over HDMI are incorrect, have a strange tint, or appear washed out/oversaturated.",
+          "solution": "Can be caused by a faulty HDMI cable or a poor connection at the port. Incorrect color settings in the graphics card control panel or on the monitor itself can also be a factor. Try resetting these settings to default."
+        },
+        "black screen": {
+          "description": "The HDMI-connected display remains black, showing no image, even if the PC seems to be outputting a signal.",
+          "solution": "Similar to 'no signal.' Could be a graphics driver issue, a problematic HDMI cable, incorrect input selection on display, or a failure of the GPU or HDMI port. Test with different cables, ports, and displays."
+        }
+      },
+      "speakers": {
+        "no sound": {
+          "description": "No audio is produced from the connected speakers, despite them being powered on and volume turned up.",
+          "solution": "Check speaker power, volume knob, and ensure they are connected to the correct audio output jack on the PC (usually green). Verify the correct playback device is selected and not muted in OS sound settings. Test with headphones."
+        },
+        "low volume": {
+          "description": "The sound output from the speakers is very quiet, even when volume controls are set to maximum.",
+          "solution": "Increase volume on the speakers themselves and within the operating system's sound settings. Check application-specific volume controls. Ensure audio cables are fully and correctly plugged into both speakers and PC."
+        },
+        "crackling": {
+          "description": "Speakers produce a crackling, popping, or static-like interference during audio playback.",
+          "solution": "Often caused by a loose or damaged speaker cable connection. Interference from other electronic devices can also be a culprit. Failing speaker drivers (cones) or internal amplifier issues may require speaker repair/replacement."
+        },
+        "distortion": {
+          "description": "Audio from the speakers sounds garbled, fuzzy, or unclear, not faithfully reproducing the sound.",
+          "solution": "Playing audio at excessively high volumes can cause distortion. Damaged speaker cones, a poor quality audio source file, or problematic sound enhancement settings in the OS can also be factors. Faulty speaker amplifier."
+        },
+        "imbalance": {
+          "description": "Sound output is noticeably louder from one speaker in a stereo pair than the other.",
+          "solution": "Check the audio balance settings in your operating system's sound properties to ensure it's centered. Verify speaker cables are correctly connected (left to right). One speaker or an amplifier channel might be faulty."
+        },
+        "popping": {
+          "description": "Sudden, sharp popping sounds are emitted from the speakers, sometimes when audio starts, stops, or power changes.",
+          "solution": "Can occur when speakers are powered on/off. Also, driver issues, electrical interference, loose connections, or failing speaker components (capacitors in amplifier) can cause popping sounds during playback."
+        },
+        "muted": {
+          "description": "The speakers produce no sound, and the system or speaker controls indicate they are muted, but unmuting doesn't help.",
+          "solution": "Check for a physical mute button on the speakers or remote. Verify the mute status in the operating system's sound volume mixer and ensure the correct playback device isn't muted."
+        },
+        "static noise": {
+          "description": "A persistent hissing or static sound is heard from the speakers, even when no audio is playing.",
+          "solution": "Caused by poor cable shielding, loose connections, or electrical interference from nearby devices or faulty power outlets. Ground loop issues or problems with the PC's sound card or speaker electronics can also generate static."
+        },
+        "driver fail": {
+          "description": "Speakers (especially USB or those connected via a sound card) are not working due to issues with their software drivers.",
+          "solution": "If using USB speakers or speakers connected via a dedicated sound card, ensure the appropriate audio drivers are correctly installed and up-to-date. Try reinstalling the drivers if sound issues persist."
+        },
+        "intermittent": {
+          "description": "The sound from the speakers cuts in and out, or works unreliably.",
+          "solution": "Usually points to loose cable connections at the speakers or PC audio jack. Failing speaker components, a faulty amplifier, driver conflicts, or sporadic electrical interference can also cause sound to cut in and out."
+        }
+      },
+      "microphone": {
+        "no input": {
+          "description": "The microphone does not pick up any sound, or applications report no audio input from the selected microphone.",
+          "solution": "Ensure the microphone is plugged into the correct port on your PC (usually pink for analog mics). Check for a physical mute switch on the mic or headset. Select the correct recording device in OS sound settings and grant application permissions."
+        },
+        "low sensitivity": {
+          "description": "The microphone picks up sound only at very low levels, requiring users to speak loudly or very close to it.",
+          "solution": "Increase the microphone input level and microphone boost (if available) in your operating system's sound recording settings. Position the microphone closer to your mouth. Update audio drivers."
+        },
+        "static noise": {
+          "description": "A persistent hissing, buzzing, or static sound is present in the microphone's audio input.",
+          "solution": "Often due to a poor connection, electrical interference from other devices, or a faulty cable/microphone. Ensure the microphone jack is clean. If using a USB mic, try a different USB port."
+        },
+        "echo": {
+          "description": "The microphone picks up audio from the speakers, creating an echo or feedback loop during calls or recordings.",
+          "solution": "Typically caused by your speakers playing back your microphone's input, which then gets picked up again. Use headphones instead of speakers, lower speaker volume, or enable acoustic echo cancellation in your communication app's settings."
+        },
+        "muted": {
+          "description": "The microphone input is muted, either by a physical switch, OS settings, or application settings, and cannot be unmuted.",
+          "solution": "Check for a physical mute switch on the microphone or headset cable. Verify mute status in the operating system's sound recording properties and within the specific application you are using."
+        },
+        "crackling": {
+          "description": "The audio input from the microphone contains crackling or popping sounds.",
+          "solution": "Often indicates a loose or damaged cable connection at the microphone or PC port. Audio driver issues, electrical interference, or a faulty microphone capsule or internal wiring can also cause crackling sounds."
+        },
+        "driver fail": {
+          "description": "The microphone (especially USB or sound card connected) is not working due to issues with its software drivers.",
+          "solution": "For USB microphones or microphones used via a sound card, ensure the necessary drivers are correctly installed and up-to-date. Check Device Manager for any errors related to the microphone or sound devices."
+        },
+        "wrong device": {
+          "description": "The operating system or application is attempting to use a different recording device instead of the intended microphone.",
+          "solution": "Make sure the desired microphone is selected as the default recording device in your operating system's sound settings and is also chosen as the input device within the specific application (e.g., Discord, Zoom)."
+        },
+        "low volume": {
+          "description": "The audio input level from the microphone is consistently too quiet, even with input levels maximized.",
+          "solution": "Similar to low sensitivity. Adjust the microphone input levels in the OS sound settings (Recording devices > Properties > Levels). Check for any physical volume controls on the microphone itself."
+        },
+        "intermittent": {
+          "description": "The microphone's audio input cuts in and out, or works unreliably.",
+          "solution": "Usually caused by a loose cable connection at the microphone or PC. A failing microphone, driver conflicts, or USB power management settings (for USB mics) turning the device off can also lead to intermittent input."
+        }
+      },
+      "webcam": {
+        "no video": {
+          "description": "The webcam does not display any image, or applications report that no webcam is detected or available.",
+          "solution": "Check the USB connection is secure; try a different USB port. Ensure the webcam is selected as the video source in the application you're using. Update webcam drivers or use generic OS drivers. Test in another app."
+        },
+        "blurry image": {
+          "description": "The video feed from the webcam is out of focus, fuzzy, or lacks sharpness.",
+          "solution": "Gently clean the webcam lens with a microfiber cloth. If your webcam has manual focus, adjust it. Ensure there is adequate lighting in the room. Some webcams have fixed focus designed for a specific distance."
+        },
+        "flickering": {
+          "description": "The webcam image flickers rapidly, or shows bands of light moving across the image, especially under artificial lighting.",
+          "solution": "Often caused by interference from room lighting frequency (e.g., 50Hz/60Hz fluorescent lights). Some webcam software includes an anti-flicker setting. USB bandwidth issues or driver problems can also contribute."
+        },
+        "driver fail": {
+          "description": "The webcam is not working correctly due to missing, corrupted, or outdated software drivers.",
+          "solution": "Reinstall webcam drivers from the manufacturer's website, or allow the operating system to find and install generic drivers. Check Device Manager for any errors or conflicts related to the webcam."
+        },
+        "dark image": {
+          "description": "The video feed from the webcam is too dark, making it difficult to see the subject, even in normally lit conditions.",
+          "solution": "Increase the amount of ambient lighting in your room. Adjust exposure settings within the webcam software if such options are available. Many webcams struggle to produce a bright image in low-light conditions."
+        },
+        "frozen frame": {
+          "description": "The webcam video feed freezes on a single image and does not update, while the application might still be responsive.",
+          "solution": "Can be due to USB bandwidth limitations (try a different port, unplug other high-bandwidth USB devices), an application conflict, or outdated drivers. Insufficient system resources (CPU/RAM) can also cause freezing. Restart the application or PC."
+        },
+        "resolution low": {
+          "description": "The webcam video quality is poor, and the image appears pixelated or at a lower resolution than the webcam supports.",
+          "solution": "Check the resolution settings within the webcam application you are using. Ensure the USB port being used can provide sufficient bandwidth for higher resolutions, though most webcams are USB 2.0 compatible."
+        },
+        "no focus": {
+          "description": "The webcam is unable to focus on the subject, resulting in a persistently blurry image.",
+          "solution": "If the webcam features autofocus, allow it some time to adjust or try pointing it at subjects at different distances. If it has manual focus, adjust the lens ring. Clean the lens. The focus mechanism might be faulty."
+        },
+        "disconnected": {
+          "description": "The webcam randomly disconnects during use, or is not consistently detected by the PC.",
+          "solution": "A loose USB cable is a common cause. Try a different USB port. Driver problems or Windows power saving settings for USB hubs (accessible via Device Manager) might be turning the webcam off."
+        },
+        "permission denied": {
+          "description": "An application is blocked from accessing the webcam by operating system privacy settings or security software.",
+          "solution": "Check your operating system's privacy settings to ensure the application you are using has been granted permission to access the camera. Antivirus or security software might also be blocking webcam access."
+        }
+      },
+      "ssd": {
+        "not detected": {
+          "description": "The Solid State Drive (SSD) is not recognized by the system BIOS/UEFI or the operating system.",
+          "solution": "For SATA SSDs, check both SATA data and power cable connections. For M.2 SSDs, ensure it's correctly and firmly seated in the M.2 slot and secured. Verify the drive is recognized in BIOS/UEFI."
+        },
+        "slow read": {
+          "description": "Reading data from the SSD (e.g., loading programs, opening files) is significantly slower than expected for an SSD.",
+          "solution": "Ensure TRIM command is enabled in your OS. Update SSD firmware and motherboard chipset/storage drivers. Check the drive's health using the manufacturer's SSD toolbox software. Nearly full SSDs can experience reduced performance."
+        },
+        "slow write": {
+          "description": "Writing data to the SSD (e.g., saving files, installing software) is unusually slow.",
+          "solution": "Similar to slow read issues. TRIM, up-to-date firmware, and correct drivers are important. Available free space significantly impacts write performance on many SSDs. Check for heavy background disk activity."
+        },
+        "intermittent": {
+          "description": "The SSD randomly disappears from the system, causes freezes, or shows intermittent performance issues.",
+          "solution": "For SATA SSDs, check for loose cable connections. M.2 SSDs could have seating issues or be overheating (consider an M.2 heatsink). Update SSD firmware. This could be an early sign of drive failure."
+        },
+        "firmware error": {
+          "description": "The SSD reports a firmware error, or issues are suspected to be related to outdated or corrupted firmware.",
+          "solution": "Check the SSD manufacturer's website for the latest firmware version and a utility to apply it. Corrupted or outdated firmware can lead to detection problems, performance degradation, or instability."
+        },
+        "corrupted data": {
+          "description": "Files stored on the SSD become unreadable, damaged, or cause application errors when accessed.",
+          "solution": "Run `chkdsk` or equivalent file system check. Data corruption can occur due to sudden power loss, failing SSD memory cells, or firmware bugs. Ensure a reliable power supply (PSU). Regular backups are crucial."
+        },
+        "trim fail": {
+          "description": "The TRIM command, essential for maintaining SSD performance, is not functioning correctly or is disabled.",
+          "solution": "Verify that your operating system supports TRIM and that it is enabled (e.g., using `fsutil behavior query DisableDeleteNotify` in Windows CMD). Update storage drivers. Some older SSDs or configurations might have compatibility issues."
+        },
+        "overheating": {
+          "description": "The SSD, particularly M.2 NVMe drives, becomes excessively hot, potentially leading to performance throttling or reduced lifespan.",
+          "solution": "This is more common with M.2 NVMe SSDs, especially high-performance ones. Ensure good overall case airflow. Consider installing an M.2 heatsink if the drive consistently runs hot and throttles performance."
+        },
+        "sudden drop": {
+          "description": "The SSD's performance (read/write speeds) unexpectedly and significantly decreases.",
+          "solution": "If SSD performance suddenly degrades significantly, check drive health using manufacturer's tools, monitor its temperature, and ensure sufficient free space. Update firmware. This could indicate impending failure; back up data."
+        },
+        "disk full": {
+          "description": "The SSD has little to no free space available, which can severely degrade performance and prevent new data from being written.",
+          "solution": "SSDs require some free space for wear leveling algorithms and optimal performance. Avoid filling the drive to its maximum capacity. Delete unneeded files or move large data to alternative storage."
+        }
+      },
+      "psu": {
+        "no power": {
+          "description": "The PC shows no signs of life when the power button is pressed; no fans spin, and no lights illuminate. The Power Supply Unit may not be providing power.",
+          "solution": "Ensure the PSU's power switch at the back is in the 'ON' position. Check the main power cable is securely connected to both the PSU and a working wall outlet. Test the wall outlet. The PSU may have failed."
+        },
+        "unstable voltage": {
+          "description": "The PSU provides inconsistent or incorrect voltage levels to components, causing system instability, crashes, or reboots.",
+          "solution": "Can cause system crashes, random reboots, and potential hardware damage. Diagnosed accurately with a multimeter on PSU connectors or sometimes indicated by BIOS/UEFI hardware monitor (less reliable). Often requires PSU replacement."
+        },
+        "fan noise": {
+          "description": "The PSU fan produces excessive noise, such as grinding, whining, or running at unusually high speeds.",
+          "solution": "Dust buildup within the PSU fan is a common cause. A failing fan bearing can also create grinding or whining noises. The PSU might be overworked if undersized. Clean carefully with compressed air (PSU off and unplugged)."
+        },
+        "overheating": {
+          "description": "The PSU itself becomes excessively hot to the touch, or its fan is not expelling hot air effectively.",
+          "solution": "The PSU fan may be failing or blocked by dust, preventing proper cooling. The PSU might be overloaded if it's undersized for the system's power demands. Ensure good case ventilation around the PSU intake and exhaust."
+        },
+        "coil whine": {
+          "description": "A high-pitched buzzing or whining sound emanates from the PSU, caused by vibrating electrical components (coils).",
+          "solution": "A high-pitched buzzing or whining noise from electrical components (coils/inductors) inside the PSU, often noticeable under varying loads. Usually harmless but can be annoying. Not easily fixable; may require PSU replacement if severe."
+        },
+        "short circuit": {
+          "description": "The PSU's protection mechanisms engage due to a short circuit in a connected component or within the PSU itself.",
+          "solution": "A quality PSU should have short circuit protection and shut down. If a component in the PC shorts, the system may not power on. Identify and remove the faulty component. Test PSU separately if possible (e.g., paperclip test - use extreme caution)."
+        },
+        "power cycle": {
+          "description": "The PC turns on briefly, then immediately shuts off and may attempt to restart repeatedly.",
+          "solution": "The PC turns on briefly then powers off repeatedly. This can be the PSU's protection mechanisms kicking in due to an overload, a short circuit, or an internal PSU fault. Can also be caused by other hardware issues (CPU, RAM, Motherboard)."
+        },
+        "low wattage": {
+          "description": "The PSU's maximum power output is insufficient for the demands of the PC's components, leading to instability or failure to power on under load.",
+          "solution": "If the PSU cannot supply enough power for all connected components (especially after upgrading a power-hungry part like a graphics card), the system will be unstable, crash under load, or fail to boot. Calculate total system wattage needed."
+        },
+        "connector fail": {
+          "description": "A power connector from the PSU (e.g., ATX, PCIe, SATA power) is damaged, burnt, or not making proper contact.",
+          "solution": "Burnt, melted, or discolored power connectors (e.g., PCIe power to GPU, ATX connector to motherboard) indicate a very serious issue. Stop using immediately. Caused by poor connection, overload, or a faulty PSU/cable."
+        },
+        "overheating shutdown": {
+          "description": "The PC shuts down unexpectedly, and the PSU is very hot, indicating its Over-Temperature Protection may have triggered.",
+          "solution": "Many PSUs have Over-Temperature Protection (OTP). If the PSU shuts down due to heat, its internal temperature is too high. Check the PSU fan, clean dust thoroughly, and ensure adequate ventilation. The PSU might be failing or overloaded."
+        }
+      }
+    }
+  },
+  {
+    "device": "wifi",
+    "issues": {
+      "can't connect": {
+        "description": "The device is unable to establish a connection to the Wi-Fi network, often failing after attempting to connect.",
+        "solution": "Restart your modem, router, and the connecting device. Double-check the Wi-Fi password for accuracy. Ensure you are within range of the Wi-Fi signal. Try connecting another device to see if the issue is widespread."
+      },
+      "no internet": {
+        "description": "The device is connected to the Wi-Fi network, but there is no access to the internet (e.g., websites don't load).",
+        "solution": "Restart your modem and router. Check your ISP's service status for outages. Ensure all cables (coaxial, ethernet) are securely connected to the modem and router. Contact your ISP if the problem persists after router lights indicate connectivity."
+      },
+      "wifi keeps dropping": {
+        "description": "The Wi-Fi connection is unstable and frequently disconnects, requiring manual reconnection or dropping out periodically.",
+        "solution": "Restart your router and modem. Update your router's firmware. Check for interference from other devices (microwaves, Bluetooth). Move your router to a more central location or reduce the distance to your device. Consider changing the Wi-Fi channel."
+      },
+      "slow wifi": {
+        "description": "Internet speeds over the Wi-Fi connection are significantly slower than expected or compared to a wired connection.",
+        "solution": "Restart your modem and router. Test speeds with a wired connection to the router. Reduce the number of connected devices or heavy bandwidth usage. Update router firmware. Consider upgrading your internet plan or router if consistently slow."
+      },
+      "wifi not showing": {
+        "description": "The desired Wi-Fi network name (SSID) does not appear in the list of available networks on the device.",
+        "solution": "Ensure your router is powered on and its Wi-Fi light is active. Restart your router and the device trying to connect. Check if the SSID broadcast is enabled in the router settings. The device's Wi-Fi adapter might be disabled."
+      },
+      "wrong password": {
+        "description": "The device fails to connect to the Wi-Fi network, indicating an incorrect password, even if it seems correct.",
+        "solution": "Carefully re-enter the Wi-Fi password, paying attention to case sensitivity and special characters. Check if Caps Lock is accidentally enabled. If you've forgotten the password, you may need to reset the router to factory defaults."
+      },
+      "weak signal": {
+        "description": "The Wi-Fi signal strength is low, resulting in poor performance, slow speeds, or connection drops.",
+        "solution": "Move your device closer to the Wi-Fi router. Reposition the router to a more central, open location, away from obstructions and other electronics. Consider using a Wi-Fi extender or a mesh Wi-Fi system for larger homes."
+      },
+      "router not working": {
+        "description": "The Wi-Fi router shows no signs of power, its lights indicate an error, or it fails to broadcast a Wi-Fi signal.",
+        "solution": "Check router power supply and ensure all lights are functioning as expected (refer to router manual). Restart the router. If it fails to power on or connect after a restart, the router itself might be faulty and need replacement."
+      },
+      "wifi turns off": {
+        "description": "The Wi-Fi feature on a device or the Wi-Fi broadcast from the router turns off unexpectedly by itself.",
+        "solution": "On your device, check power-saving settings that might disable Wi-Fi to conserve battery. Update Wi-Fi adapter drivers on the device. On the router, check for scheduled reboot settings or firmware issues. Router might be overheating."
+      },
+      "device won't connect": {
+        "description": "A specific device cannot connect to the Wi-Fi network, while other devices might connect successfully.",
+        "solution": "Restart both the device and your router. 'Forget' the Wi-Fi network on the device and try reconnecting. Ensure the device's Wi-Fi drivers/software are up to date. Check if a MAC address filter is enabled on the router."
+      },
+      "interference": {
+        "description": "The Wi-Fi signal is disrupted or weakened by other electronic devices or physical obstructions.",
+        "solution": "Identify and move sources of interference like microwaves, cordless phones, or Bluetooth devices away from the router. Change the Wi-Fi channel in your router settings (try channels 1, 6, or 11 for 2.4GHz band)."
+      },
+      "too many devices": {
+        "description": "The Wi-Fi network performance degrades significantly when multiple devices are connected and actively using the internet.",
+        "solution": "Disconnect some devices from the Wi-Fi network to reduce load. Prioritize bandwidth for critical devices using Quality of Service (QoS) settings if your router supports it. Consider upgrading to a router designed for more connections."
+      },
+      "ip conflict": {
+        "description": "Two or more devices on the Wi-Fi network are assigned the same IP address, causing connectivity issues for one or both.",
+        "solution": "Restart your router and the affected device(s); this often resolves IP conflicts by reassigning addresses. If persistent, set the device to obtain an IP address automatically (DHCP) or manually assign a static IP outside the router's DHCP range."
+      },
+      "no signal": {
+        "description": "The device detects no Wi-Fi signal from the router, or the signal bars are completely empty.",
+        "solution": "Verify the router is powered on and broadcasting its SSID. Check the Wi-Fi range; you might be too far. Physical obstructions can block signals. Ensure the device's Wi-Fi is enabled. Router might be faulty."
+      },
+      "wifi error": {
+        "description": "The device displays a generic Wi-Fi error message, or the Wi-Fi connection status shows an unspecified error.",
+        "solution": "Restart your device and the Wi-Fi router. 'Forget' the network on your device and reconnect. Run network troubleshooters on your device. Update Wi-Fi adapter drivers on the device and router firmware. Reset network settings if issues persist."
+      }
+    }
+  },
+  {
+    "device": "bluetooth",
+    "issues": {
+      "can't pair": {
+        "description": "The device fails to establish an initial connection (pairing) with a Bluetooth peripheral (e.g., headphones, speaker, mouse).",
+        "solution": "Ensure both Bluetooth devices are in pairing mode and within close proximity (usually within 10 meters). Turn Bluetooth off and on for both devices. Remove any previous pairing records for the device and try again. Check device compatibility."
+      },
+      "no bluetooth": {
+        "description": "The Bluetooth option is missing, greyed out, or cannot be enabled on the primary device (e.g., phone, laptop, PC).",
+        "solution": "Verify Bluetooth is enabled on your device (e.g., in settings, action center, or via a physical switch on laptops). Check if Airplane Mode is accidentally turned on. Restart your device. Ensure Bluetooth drivers are installed and not disabled in Device Manager."
+      },
+      "bluetooth keeps disconnecting": {
+        "description": "An established Bluetooth connection between two devices drops out frequently or randomly.",
+        "solution": "Move the Bluetooth devices closer together to ensure a strong signal. Minimize interference from other wireless devices (Wi-Fi routers, microwaves). Update Bluetooth drivers on your primary device. Check battery levels of the Bluetooth peripheral."
+      },
+      "bluetooth not working": {
+        "description": "Bluetooth functionality is generally unresponsive or failing on the device; it cannot find, pair, or connect to peripherals.",
+        "solution": "Restart your device and the Bluetooth peripheral. Toggle Bluetooth off and then on again on your device. Update or reinstall Bluetooth drivers. Check for operating system updates. Remove and re-pair the Bluetooth device."
+      },
+      "device not found": {
+        "description": "The primary device cannot detect a nearby Bluetooth peripheral when scanning, even if the peripheral is in pairing mode.",
+        "solution": "Ensure the Bluetooth peripheral is turned on and in discoverable/pairing mode (check its manual). Make sure your primary device's Bluetooth is on and actively scanning. Bring the devices closer. Other devices might be interfering."
+      },
+      "audio not playing": {
+        "description": "A Bluetooth audio device (headphones/speaker) is connected, but sound still plays from the primary device's speakers or not at all.",
+        "solution": "Confirm the Bluetooth audio device (e.g., headphones, speaker) is selected as the active audio output playback device in your system's sound settings. Check the volume levels on both your primary device and the Bluetooth audio device."
+      },
+      "bluetooth off": {
+        "description": "The Bluetooth feature is currently turned off on the device and needs to be enabled to connect to peripherals.",
+        "solution": "Go to your device's settings (e.g., Settings > Bluetooth, or Action Center/Control Center) and toggle the Bluetooth switch to the 'On' position. If it doesn't stay on, restart your device or check for driver issues."
+      },
+      "bluetooth greyed out": {
+        "description": "The option to turn Bluetooth on or off is disabled (greyed out) in the device settings, preventing its use.",
+        "solution": "This often indicates a driver issue or a hardware problem. Restart your device. Check Device Manager for errors related to Bluetooth hardware; try updating or reinstalling drivers. A hardware fault may require professional repair."
+      },
+      "can't connect": {
+        "description": "The device sees a Bluetooth peripheral but fails to establish a connection when attempting to connect to an already paired device.",
+        "solution": "Ensure the Bluetooth peripheral is powered on and not already connected to another device. Remove any existing pairing on your primary device and try pairing again. Update Bluetooth drivers and operating system. Restart both devices."
+      },
+      "connection failed": {
+        "description": "An attempt to connect to a Bluetooth peripheral results in a 'Connection Failed' error message or similar.",
+        "solution": "Toggle Bluetooth off and on for both devices. Move them closer. Ensure the peripheral is in pairing mode. Check for interference. 'Forget' the device in Bluetooth settings and attempt a fresh pairing. Outdated firmware on either device could be an issue."
+      },
+      "bluetooth error": {
+        "description": "The device displays a generic Bluetooth error message, or the Bluetooth service experiences an unspecified malfunction.",
+        "solution": "Note any specific error messages. Restart your device. Run any built-in Bluetooth troubleshooters. Update or reinstall Bluetooth drivers from your device or motherboard manufacturer's website. Check for OS updates that might resolve compatibility issues."
+      },
+      "interference": {
+        "description": "The Bluetooth signal is disrupted or weakened by other wireless devices (e.g., Wi-Fi, microwaves) or physical obstructions.",
+        "solution": "Move your Bluetooth devices away from potential sources of interference like Wi-Fi routers (especially 2.4GHz), microwaves, some cordless phones, and even thick walls or other wireless peripherals. Try a different physical location."
+      },
+      "driver outdated": {
+        "description": "The software driver for the Bluetooth adapter on the primary device is old and may be causing compatibility or performance issues.",
+        "solution": "Go to Device Manager on your PC, find the Bluetooth adapter, and select 'Update driver.' Alternatively, visit the website of your computer or Bluetooth adapter manufacturer to download and install the latest drivers."
+      },
+      "bluetooth slow": {
+        "description": "Data transfer over Bluetooth is very slow, or Bluetooth audio/input devices experience significant lag.",
+        "solution": "Slow file transfers or laggy audio can be due to distance, interference, or an older Bluetooth version on one of the devices. Minimize active Bluetooth connections. Update drivers. Ensure no heavy background tasks are impacting system performance."
+      },
+      "bluetooth not turning on": {
+        "description": "The Bluetooth feature on the device cannot be enabled; the toggle might switch back to off or an error occurs.",
+        "solution": "Restart your device. If it's a PC, check Device Manager to ensure the Bluetooth adapter is enabled and doesn't have errors. Update or reinstall drivers. On mobile devices, check for software updates. A hardware issue could prevent it from turning on."
+      }
+    }
+  }
+]

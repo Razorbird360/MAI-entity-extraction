@@ -2,6 +2,10 @@
   "name": "entity-extraction-api",
   "version": "1.0.0",
   "main": "api/extract.js",
-  "type": "module",
-  "dependencies": {}
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
