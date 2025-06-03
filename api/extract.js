@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const Fuse = require('fuse.js');
 
 const app = express();
 app.use(express.json());
@@ -9,49 +10,44 @@ const definitionsPath = path.join(__dirname, '../issueDefinitions.json');
 let definitions = [];
 
 try {
-  const raw = fs.readFileSync(definitionsPath, 'utf-8');
-  definitions = JSON.parse(raw);
-} catch (err) {
-  console.error('Error reading or parsing issueDefinitions.json:', err);
-  //exit so server does not start with invalid data
+  const filedata = fs.readFileSync(definitionsPath, 'utf-8');
+  definitions = JSON.parse(filedata);
+} catch (e) {
+  console.error('cant read file', e);
   process.exit(1);
 }
 
-//escaoe regex special characters in a string
 const escapeRegex = (str) =>
   str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-// Precompute every “pattern” (device, component, issue, description, solution, regex)
-const patterns = [];
-const componentsByDevice = {};  
+const patterns = []; //flat array of all patterns to match against text
+const componentsByDevice = {}; //map each device name to array of component names, wifi and bluetooth are top level so no components
 
-definitions.forEach((deviceDef) => {
+definitions.forEach((deviceDef) => { //fill the patterns and componentsByDevice arrays
   const dev = deviceDef.device.trim().toLowerCase();
   componentsByDevice[dev] = [];
 
-  //wifi and bluetooth devices
+  //wifi and bluetooth
   if (deviceDef.issues) {
     for (const [issueKey, { description, solution }] of Object.entries(deviceDef.issues)) {
       const keyword = issueKey.trim().toLowerCase();
-      const regex   = new RegExp(`\\b${escapeRegex(keyword)}\\b`, 'i');
 
       patterns.push({
         device: dev,
-        component: null, // top‐level (no sub‐component)
+        component: null,
         issue: keyword,
         description,
         solution,
-        regex,
       });
     }
   }
 
+  //phone laptop desktop
   if (deviceDef.components) {
     for (const [componentKey, componentObj] of Object.entries(deviceDef.components)) {
       const comp = componentKey.trim().toLowerCase();
-      componentsByDevice[dev].push(comp); // record that "comp" belongs to this device
+      componentsByDevice[dev].push(comp);
 
-      // each componentObj itself is a map from issueKey → { description, solution}
       for (const [issueKey, issueDetail] of Object.entries(componentObj)) {
         if (
           typeof issueDetail !== 'object' ||
@@ -59,19 +55,16 @@ definitions.forEach((deviceDef) => {
           !('description' in issueDetail) ||
           !('solution' in issueDetail)
         ) {
-          continue;
+          continue; // skip invalid entries
         }
 
         const keyword = issueKey.trim().toLowerCase();
-        const regex   = new RegExp(`\\b${escapeRegex(keyword)}\\b`, 'i');
-
         patterns.push({
           device: dev,
           component: comp,
           issue: keyword,
           description: issueDetail.description,
           solution: issueDetail.solution,
-          regex,
         });
       }
     }
@@ -85,28 +78,26 @@ app.get('/health', (_req, res) => {
   });
 });
 
-
 app.post('/extract', (req, res) => {
-  const rawText = (req.body.text || '').trim();
-  const text    = rawText.toLowerCase();
+  const userText = (req.body.text || '').trim();
+  const text = userText.toLowerCase();
 
   if (!text) {
-    return res.status(400).json({ error: 'Missing "text" in request body' });
+    return res.status(400).json({ error: 'no text in request body' });
   }
 
-  //check for device mentions in the text
+  // Detect device by exact boundary regex
   let detectedDevice = null;
   for (const deviceDef of definitions) {
     const devName = deviceDef.device.trim().toLowerCase();
-    // check word boundary so that "phone" does not match "smartphone" accidentally
-    const deviceRegex = new RegExp(`\\b${escapeRegex(devName)}\\b`, 'i');
+    const deviceRegex = new RegExp(`\\b${escapeRegex(devName)}\\b`, 'i'); // \\b is a word boundary anchor in JavaScript’s RegExp. It ensures that “phone” matches “my phone” or “Phone” but does not match “smartphone.”
     if (deviceRegex.test(text)) {
       detectedDevice = devName;
       break;
     }
   }
 
-  //if a device was detected, check for components
+  // If a device was detected, detect component by exact boundary regex
   let detectedComponent = null;
   if (detectedDevice && componentsByDevice[detectedDevice]) {
     for (const compName of componentsByDevice[detectedDevice]) {
@@ -118,45 +109,75 @@ app.post('/extract', (req, res) => {
     }
   }
 
-  //filter the patterns based on detected device and component
   let candidatePatterns = [];
 
   if (detectedDevice) {
-    //if both device and component were found, only match patterns under that device and component
     if (detectedComponent) {
       candidatePatterns = patterns.filter(
         (p) => p.device === detectedDevice && p.component === detectedComponent
       );
+    } else {
+      candidatePatterns = patterns.filter((p) => p.device === detectedDevice && p.component === null);
     }
-    //if device found but no component matched, match all issues under that device
-    if (!detectedComponent) {
-      candidatePatterns = patterns.filter((p) => p.device === detectedDevice);
-    }
-  }
-  //if no device was mentioned, fallback to matching EVERY pattern
-  if (!detectedDevice) {
+  } else {
+    // no device → search across all patterns
     candidatePatterns = patterns.slice();
   }
+  
+  let fuzzyResults = [];
 
-  //run the regex tests on the candidate patterns
-  const matches = [];
-  for (const pat of candidatePatterns) {
-    if (pat.regex.test(text)) {
-      matches.push({
-        device: pat.device,
-        component: pat.component, // string or null
-        issue: pat.issue,
-        description: pat.description,
-        solution: pat.solution,
-      });
+  if (candidatePatterns.length > 0) {
+    const fuseOptions = {
+      includeScore: true,
+      threshold: 0.4,
+      distance: 100,
+      ignoreLocation: true,
+    };
+
+    // Creates a Fuse instance that will search within the user's text.
+    const fuseForUserText = new Fuse([text], fuseOptions);
+
+    for (const p of candidatePatterns) {
+      const keywordToFind = p.issue;
+      const results = fuseForUserText.search(keywordToFind);
+
+      if (results.length > 0) {
+        fuzzyResults.push({
+          item: p,
+          score: results[0].score,
+        });
+      }
     }
   }
 
-  return res.json({
-    input: rawText,
-    matches: matches,
-  });
+  // take only the top result
+  if (fuzzyResults.length > 0) {
+    fuzzyResults.sort((a, b) => a.score - b.score); 
+    const best = fuzzyResults[0].item;    // the pattern object
+
+    let finalComponentValue = best.component; 
+    if ((best.device === 'wifi' || best.device === 'bluetooth') && best.component === null) {
+      finalComponentValue = "network";
+    }
+    const matches = {
+      device: best.device,
+      component: finalComponentValue,
+      issue: best.issue,
+      description: best.description,
+      solution: best.solution,
+    };
+
+    return res.json({
+      input: userText,
+      matches,
+    });
+  } else {
+    return res.json({
+      input: userText,
+      matches: [],
+    });
+  }
+
 });
 
-// export for vercel
 module.exports = app;
